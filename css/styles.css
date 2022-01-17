@@ -13,7 +13,7 @@ body {
   min-width: 600px;
 }
 div {
-  border: 10px solid #560bad;
+  
   background-color: #fcfcfc;
   text-align: center;
   margin-left: 80px;
@@ -95,6 +95,61 @@ li a {
 }
 li a:hover {
   background-color: #1d3557;
+}
+#menuA {   
+  position: absolute; 
+  margin: 3.7rem 0.5rem 0.5rem -6.4rem; 
+  width: 23%; 
+  min-width: 200px; 
+  line-height: 20pt; /*separación entre lineas*/ 
+}
+.showme{                 /* Capa emergente */ 
+  position: absolute; 
+  display: none; 
+} 
+.showhim:hover .showme{ 
+  display: block; 
+}
+.menumov {
+  position: absolute;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none; 
+  color: rgb(0, 0, 0); 
+  background-color: #457b9d;
+}
+/* ------Menu responsivo------- */
+@media screen and (min-width: 1000px){
+   
+  #menuA{
+      display:none;
+  }
+
+}
+@media screen and (max-width: 1000px){
+  
+  #menuA{
+  display:none;
+  }
+
+}
+@media screen and (max-width: 750px){
+  
+  .elivi {
+      display:none;
+  }
+  
+  #menuA{
+      display:block;
+  }
+  
+}
+@media screen and (max-width: 550px){
+  
+  #menuA{
+      display:block;
+  }
+  
 }
 
 /*Estilos Listas Ordenadas*/

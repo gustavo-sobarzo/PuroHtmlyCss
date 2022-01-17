@@ -1,13 +1,17 @@
 /*Estilo general body*/
+div, iframe, a, h1{
+    margin-left: auto;
+    margin-right: auto;
+}
 body{
     background-color: #D5D8DC;
+    min-width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contenedor{
     margin: 50px;
     background-color: #ffffff;
     border-radius: 3px;
-}
-.contenedor_2{
     text-align: center;
 }
 
@@ -15,9 +19,6 @@ body{
 .titulo {
     padding-top: 30px;
     color: #F1948A;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    float: none;
 }
 .titulo:hover{
     color: black;
@@ -25,16 +26,18 @@ body{
 
 /*Estilo Iframe*/
 .marco{
-    width: 94%;
+    width: 80%;
     height: 400px;
     border: 1px solid #F1948A;
-    margin: 30px;
+   
+    margin-top: 30px;
     border-radius: 1px;
+    
 }
 
 /*Estilo Boton Volver*/
 .btnVolver{
-    margin-left: 50%;
+    margin-left: 72%;
     text-decoration: none;
     padding: 20px;
     background-color: #2ECC71;
@@ -42,7 +45,10 @@ body{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.contenedorBtn{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 .btnVolver:hover{
     background-color: #82E0AA;
 }
