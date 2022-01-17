@@ -1,0 +1,112 @@
+/*Estilos General Body*/
+body {
+  min-width: 600px;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div {
+  border: 10px solid #560bad;
+  background-color: #fcfcfc;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+p {
+  box-sizing: border-box;
+}
+
+/*Estilo titulo Principal */
+#titulo_principal {
+  color: #2e4053;
+  text-align: center;
+  font-family: "Trocchi", serif;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+#titulo_principal:hover {
+  background-color: #aeb6bf;
+  margin-left: 24%;
+  margin-right: 24%;
+  border-radius: 4px;
+}
+
+/* Estilos Elementos body */
+.contenedorDos {
+  border: none;
+  background-color: #d6dbdf;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/*Estilo tarjeta Java*/
+.tarjeta {
+  border: 10px solid #d1f2eb;
+  background-color: #a3e4d7;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/*Estilos tarjetas Lorem*/
+.info {
+  width: 400px;
+  height: 200px;
+  border: 3px solid #d6eaf8;
+  background-color: #aed6f1;
+  text-align: center;
+  margin: 10px 30%;
+  border-radius: 4px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#lorem1,
+#lorem2,
+#lorem3,
+#lorem4 {
+  color: #2c3e50;
+}
+
+/*Estilo barra nav de Lorem*/
+.ascensor {
+  margin: 3px;
+  text-decoration: none;
+  padding: 15px;
+  color: #17202a;
+}
+.ascensor:hover {
+  background-color: #616a6b;
+  padding: 9px;
+}
+.contenedor_ascensor {
+  padding: 15px;
+  border: none;
+  background-color: #bfc9ca;
+  border-radius: 2px;
+}
+
+/*Estilos boton Volver*/
+.btn_volver {
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn_contenedor:hover {
+  background-color: #4483ff;
+}
+
+.btn_contenedor {
+  margin-left: 30px;
+  top: 0;
+  border: none;
+  position: fixed;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #1966ff;
+  border-radius: 3px;
+}

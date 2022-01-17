@@ -1,0 +1,53 @@
+/*Estilo general body*/
+body{
+    background-color: #D5D8DC;
+}
+.contenedor{
+    margin: 50px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+.contenedor_2{
+    text-align: center;
+}
+
+/*Estilo Titulo*/
+.titulo {
+    padding-top: 30px;
+    color: #F1948A;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    float: none;
+}
+.titulo:hover{
+    color: black;
+}
+
+/*Estilo Iframe*/
+.marco{
+    width: 94%;
+    height: 400px;
+    border: 1px solid #F1948A;
+    margin: 30px;
+    border-radius: 1px;
+}
+
+/*Estilo Boton Volver*/
+.btnVolver{
+    margin-left: 50%;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #2ECC71;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnVolver:hover{
+    background-color: #82E0AA;
+}
+
+
+
+
+
