@@ -10,7 +10,7 @@ body {
     #fbfbfb 20px,
     #fbfbfb 40px
   );
-  
+  min-width: 600px;
 }
 div {
   
@@ -26,7 +26,7 @@ p {
   color: #457b9d;
 }
 .contenedorPrincipal {
-  width: 70%;
+  width: 80%;
   max-width: 1000px;
   margin: 20px auto;
   display: grid;
@@ -46,7 +46,7 @@ p {
 
 /*Estilo header o logo*/
 .cabecero {
-   width: 100%;
+  width: 100%;
   background-color: white;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
   border-radius: 1px;

@@ -23,9 +23,10 @@ p {
 .contenedorGridCard{
   border: none;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 0.5fr;
   gap: 20px;
   background-color: #d6dbdf;
+  justify-content: center;
 }
 .contenedorGrid{
   border: none;
@@ -65,7 +66,6 @@ p {
   border: none;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  text-align: center;
   transition: all 0.25s;
 }
 .tarjeta:hover {
