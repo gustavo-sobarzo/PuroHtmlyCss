@@ -127,21 +127,14 @@ p {
 .carrusel, .slide, .slider, .slide-track{
   border: none;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
+
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 9));
   }
 }
 .slider {
@@ -151,7 +144,7 @@ p {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 600px;
+  
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
