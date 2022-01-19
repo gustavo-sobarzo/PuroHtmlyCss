@@ -1,4 +1,4 @@
-/*Estilos generales del cuerpo*/
+/*---------------------Estilos generales del cuerpo---------------------------*/
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,21 +12,11 @@ body {
   );
   min-width: 600px;
 }
-div {
-  
-  background-color: #fcfcfc;
-  text-align: center;
-  margin-left: 80px;
-  margin-right: 80px;
-}
 h2 {
   color: #3f37c9;
 }
-p {
-  color: #457b9d;
-}
 .contenedorPrincipal {
-  display: grid;
+  width: 90%;
   gap: 20px;
   max-width: 80%;
   margin: 20px auto;
@@ -34,28 +24,25 @@ p {
   border: none;
   border-radius: 4px;
   background-color: #d6dbdf;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-    "cabecero			cabecero   	cabecero"
-    "listasOrdenadas		listasOrdenadas 	listasOrdenadas"
-    "tabla		tabla 	tabla"
-    "listaDescripcion	 		listaDescripcion 		listaDescripcion"
-    "listaDescripcion listaDescripcion listaDescripcion";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  
+}
+.cabecero h1{
+  text-align: center;
 }
 
-/*Estilo header o logo*/
+/*---------------------------------------Estilo header o logo--------------------------------*/
 .cabecero {
   width: 100%;
   background-color: white;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  border-radius: 1px;
-  grid-area: cabecero;
-  
+  border-radius: 1px;  
 }
 .logo {
   border: none;
   background-color: white;
+  text-align: center;
 }
 .logo h1 {
   font-size: 30px;
@@ -69,12 +56,12 @@ p {
   margin-bottom: 15px;
 }
 
-/*Estilo Titulo*/
+/*--------------------------------------------------------Estilo Titulo--------------------------------*/
 h1 {
   color: #1d3557;
 }
 
-/*Estilos de Barra Navegacion*/
+/*-------------------------------------------Estilos de Barra Navegacion-----------------------------*/
 ul {
   list-style-type: none;
   background-color: #457b9d;
@@ -93,67 +80,39 @@ li a {
   text-align: center;
   padding: 15px;
   text-decoration: none;
+  transition: all ease-in-out 450ms;
 }
 li a:hover {
   background-color: #1d3557;
 }
-#menuA {   
-  position: absolute; 
-  margin: 3.7rem 0.5rem 0.5rem -6.4rem; 
-  width: 23%; 
-  min-width: 200px; 
-  line-height: 20pt; /*separación entre lineas*/ 
-}
-.showme{                 /* Capa emergente */ 
-  position: absolute; 
-  display: none; 
-} 
-.showhim:hover .showme{ 
-  display: block; 
-}
-.menumov {
-  position: absolute;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none; 
-  color: rgb(0, 0, 0); 
-  background-color: #457b9d;
-}
-/* ------Menu responsivo------- */
-@media screen and (min-width: 1000px){
-   
-  #menuA{
-      display:none;
-  }
-
-}
-@media screen and (max-width: 1000px){
-  
-  #menuA{
-  display:none;
-  }
-
-}
-@media screen and (max-width: 750px){
-  
-  .elivi {
-      display:none;
-  }
-  
-  #menuA{
-      display:block;
-  }
-  
-}
-@media screen and (max-width: 550px){
-  
-  #menuA{
-      display:block;
-  }
-  
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #112d4e;
+  color: white;
+  cursor: pointer;
+  display: none;
 }
 
-/*Estilos Listas Ordenadas*/
+/* ------------------------------------Menu responsivo----------------------------- */
+@media (max-width: 668px) {
+  ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  nav ul {
+  display: none;
+
+  }
+}
+
+/*----------------------------Estilos Listas Ordenadas--------------------------*/
 ol {
   list-style: none;
   counter-reset: contador;
@@ -170,10 +129,10 @@ ol li::after {
 }
 .listasOrdenadas {
   border: none;
-  grid-area: listasOrdenadas;
+  text-align: center;
 }
 
-/*Estilos de Tabla*/
+/*----------------------------Estilos de Tabla--------------------------*/
 .tabla {
   margin-left: auto;
   margin-right: auto;
@@ -205,15 +164,48 @@ tr:nth-child(odd) {
 }
 .contTabla {
   border: none;
-  grid-area: tabla;
 }
 
-/*Listas de Descripcion*/
+/*------------------------Listas de Descripcion----------------------*/
 .listaDescripcion {
   margin-bottom: 20px;
   border: none;
-  grid-area: listaDescripcion;
+  text-align: center;
 }
 
-
+/*----------------------------Estilos footer---------------------*/
+.foot{
+  width: 100%;
+  background-color: #000;
+}
+.contenedorFooter{
+  background-color: #000;
+  margin: 20px auto;
+  display: grid;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.contenedorFooter .titulo1Foot{
+  margin-top: 10px;
+  color: #fbfbfb;
+  text-align: left;
+}
+.contenedorFooter h4{
+  color: #fbfbfb;
+}
+.contenedorFooter .descripcionFoot{
+  justify-content: center;
+  text-align: justify;
+  color: #457b9d;
+}
+.contenedorFooter .end{
+  font-size: small;
+  color: #457b9d;
+  text-align: center;
+  
+}
 

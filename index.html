@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
   <title>Contenido</title>
 </head>
@@ -19,26 +20,18 @@
         <p class="iniciales-logo">RD</p>
         <h1>RayoDev</h1>
       </div>
-      <div id="menuA">
-        <div href="#" class="showhim"><span class="menumov">MENÚ &#8803;</span>
-
-          <ul class="showme">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="/web/inline.html">Inline y Block</a></li>
-            <li><a href="/web/acercade.html">DIV con clases</a></li>
-            <li><a href="/web/sitioweb.html">Cargar sitio Web</a></li>
-          </ul>
-
-        </div>
+      <nav>
+        <ul id="ulMenu" class="elivi">
+          <li class="fac"><a href="index.html" title="">Inicio</a></li>
+          <li class="fac"><a href="/web/inline.html" title="">Inline y Block</a></li>
+          <li class="fac"><a href="/web/acercade.html" title="">DIV con clases</a></li>
+          <li class="fac"><a href="/web/sitioweb.html" title="">Cargar sitio Web</a></li>
+        </ul>
+      
+      <div class="hide">
+        <i class="fa fa-bars" aria-hidden="true"></i> Menu
       </div>
-
-      <ul class="elivi">
-        <li class="fac"><a href="index.html" title="">Inicio</a></li>
-        <li class="fac"><a href="/web/inline.html" title="">Inline y Block</a></li>
-        <li class="fac"><a href="/web/acercade.html" title="">DIV con clases</a></li>
-        <li class="fac"><a href="/web/sitioweb.html" title="">Cargar sitio Web</a></li>
-      </ul>
-
+      </nav>
       <h1>Menu Navegacion HTML</h1>
     </header>
 
@@ -91,6 +84,32 @@
       </dl>
     </div>
   </div>
+  <footer class="foot">
+    <div class="contenedorFooter">
+      <div class="titulo1Foot">RayoDev solo HTML and CSS demostración</div>
+      <div class="descripcionFoot">
+        <h4>Proyecto Portafolio</h4>
+        <p>   Este proyecto esta construido solo con HTML y CSS con el fin de no ocupar ninguna dependencia para generar estilos.</p>
+      </div>
+      <div class="end">Chile, Los lagos, Osorno 2022 RD ©</div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(".hide").on('click', function() {
+      $("nav ul").toggle('slow');
+    })
+    window.addEventListener('resize', function(event){
+      var anchoVentana = window.innerWidth;
+
+      if(anchoVentana > 768){
+        ulMenu.style.display = ""; 
+        mostrar();
+        ulMenu = document.querySelector('.ulMenu');
+        ulMenu.style.display = 'block';
+      }
+    })
+  </script>
 </body>
 
 </html>
