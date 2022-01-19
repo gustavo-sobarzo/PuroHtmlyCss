@@ -5,12 +5,9 @@ body {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-div {
-  border: 10px solid #560bad;
+div {  
   background-color: #fcfcfc;
   text-align: center;
-  margin-left: 80px;
-  margin-right: 80px;
 }
 p {
   box-sizing: border-box;
@@ -56,11 +53,12 @@ p {
   border: none;
   background-color: #d6dbdf;
   width: 90%;
-  margin: 20px auto;
+  margin: auto;
 }
 
 /*Estilo tarjeta Java*/
 .tarjeta {
+  box-sizing: border-box;
   height: 430px;
   border-radius: 8px;
   border: none;
@@ -76,10 +74,13 @@ p {
   font-weight: 600;
 }
 .tarjeta img {
-  width: 330px;
-  height: 190px;
+  width: 100%;
+  height: auto;
 }
 .tarjeta p{
+  
+  width: 100%;
+  height: auto;
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
@@ -106,6 +107,8 @@ p {
   padding: 9px;
 }
 .contenedor_ascensor {
+  width: 100%;
+  gap: 20px;
   margin-top: 20px;
   padding: 15px;
   border: none;
