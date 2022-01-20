@@ -10,7 +10,7 @@ body {
     #fbfbfb 20px,
     #fbfbfb 40px
   );
-  
+  min-width: 360px;
 }
 h2 {
   color: #3f37c9;
@@ -30,6 +30,16 @@ h2 {
 }
 .cabecero h1{
   text-align: center;
+}
+/*-----------------------------------Media query para dispositivos mobile-----------------------------*/
+@media screen and (max-width: 768px){
+  table{
+    font-size: small;
+    max-width: 400px;
+  }
+  h1{
+    font-size: 18px;
+  }
 }
 
 /*---------------------------------------Estilo header o logo--------------------------------*/
@@ -99,7 +109,8 @@ li a:hover {
   ul li {
     width: 100%;
     padding: 15px;
-    text-align: left;
+    justify-content: center;
+    
   }
 
   .hide {
@@ -133,11 +144,10 @@ ol li::after {
 }
 
 /*----------------------------Estilos de Tabla--------------------------*/
-.tabla {
+.contTabla {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 50%;
 }
 table,
 th,
