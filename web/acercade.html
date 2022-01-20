@@ -15,15 +15,19 @@
         <h1 id="titulo_principal">Lenguajes de Programación</h1>
         <div class="contenedorGridCard">
             <div class="tarjeta" id="java" ">
-                <img src="/imagenes/img1.jpg" alt="">
+                <img src=" /imagenes/img1.jpg" alt="">
                 <h2>Java</h2>
                 <p>Creador: James Gosling</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo totam deleniti iusto, perspiciatis
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo totam <a href="#" id="leerMas"
+                        onclick="verMas('mas')">...
+                        [leer más]</a></p>
+                <p id="desplegar" style="display: none;">deleniti iusto, perspiciatis
                     molestiae quam, hic mollitia repellendus eos magni ducimus animi rem nemo quidem, dolorum aut iste
-                    incidunt?</p>
+                    incidunt?<a href="#" id="leerMenos" onclick="verMenos('menos')">...
+                        [leer menos]</a></p>
             </div>
         </div>
-        
+
         <hr>
         <div class="carrusel">
             <h2 id="resumen">Carrusel</h2>
@@ -98,15 +102,15 @@
                     !</p>
                 <p>LOREM 1</p>
             </div>
-            
+
             <div class="tarjeta" id="lorem2">
                 <img src="/imagenes/img3.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati distinctio error officiis
                     necessitatibus
-                    </p>
+                </p>
                 <p>LOREM 2</p>
             </div>
-            
+
             <div class="tarjeta" id="lorem3">
                 <img src="/imagenes/img4.jpg" alt="">
                 <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus eveniet ratione,
@@ -116,7 +120,7 @@
                 </p>
                 <p>LOREM 3</p>
             </div>
-            
+
             <div class="tarjeta" id="lorem4">
                 <img src="/imagenes/img5.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio. Vitae accusamus
@@ -142,6 +146,22 @@
             <a class="btn_volver" href="/index.html">volver</a>
         </div>
     </div>
+    <script>
+        let verMas = (id) => {
+            if (id === 'mas') {
+                document.getElementById('desplegar').style.display = 'block';
+                document.getElementById('leerMas').style.display = 'none';
+                document.getElementById('leerMenos').style.display = 'block';
+            }
+        }
+        let verMenos = (id) => {
+            if (id === 'menos') {
+                document.getElementById('desplegar').style.display = 'none';
+                document.getElementById('leerMenos').style.display = 'none';
+                document.getElementById('leerMas').style.display = 'block';
+            }
+        }
+    </script>
 </body>
 
 </html>

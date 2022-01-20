@@ -31,14 +31,23 @@ h2 {
 .cabecero h1{
   text-align: center;
 }
-/*-----------------------------------Media query para dispositivos mobile-----------------------------*/
-@media screen and (max-width: 768px){
+/*-----------------------------------Media query para dispositivos mobiles-----------------------------*/
+@media screen and (max-width: 500px){
   table{
     font-size: small;
     max-width: 400px;
   }
   h1{
     font-size: 18px;
+  }
+  caption{
+    font-size: 18px;
+  }
+  contenedorPrincipal{
+    width: 100%;
+  }
+  .contenedorFooter .descripcionFoot{
+    font-size: 10px;
   }
 }
 
@@ -200,9 +209,19 @@ tr:nth-child(odd) {
   align-items: center;
 }
 .contenedorFooter .titulo1Foot{
-  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-top:1px;
+  padding-bottom: 1px;
   color: #fbfbfb;
-  text-align: left;
+  text-align: center;
+  border: 1px dashed #f1faee;
+}
+.titulo1Foot .logoFoter{
+  border: 1px solid #f1faee;
+  padding: 7px;
+  display: inline-block;
 }
 .contenedorFooter h4{
   color: #fbfbfb;
