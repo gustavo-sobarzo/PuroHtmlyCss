@@ -10,7 +10,7 @@ body {
     #fbfbfb 20px,
     #fbfbfb 40px
   );
-  min-width: 600px;
+  min-width: 400px;
 }
 h2 {
   color: #3f37c9;
@@ -198,6 +198,7 @@ tr:nth-child(odd) {
   color: #fbfbfb;
 }
 .contenedorFooter .descripcionFoot{
+  font-size: smaller;
   justify-content: center;
   text-align: justify;
   color: #457b9d;
