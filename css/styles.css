@@ -149,8 +149,8 @@ td {
 caption {
   color: #e63946;
   font-family: "Trocchi", serif;
-  font-size: 45px;
-  line-height: 70px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 th {
   color: #f1faee;
