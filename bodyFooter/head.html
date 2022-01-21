@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedorPrincipal">
+        <header class="cabecero">
+            <div class="logo">
+                <p class="iniciales-logo">RD</p>
+                <h1>RayoDev</h1>
+            </div>
+            <nav>
+                <ul id="ulMenu" class="elivi">
+                    <li class="fac"><a href="index.html" title="">Inicio</a></li>
+                    <li class="fac"><a href="/web/inline.html" title="">Inline y Block</a></li>
+                    <li class="fac"><a href="/web/acercade.html" title="">DIV con clases</a></li>
+                    <li class="fac"><a href="/web/sitioweb.html" title="">Cargar sitio Web</a></li>
+                </ul>
+
+                <div class="hide">
+                    <i class="fa fa-bars" aria-hidden="true"></i> Menu
+                </div>
+            </nav>
+            <h1>Menu Navegacion HTML</h1>
+        </header>
+    </div>
+    <script>
+        $(".hide").on('click', function() {
+          $("nav ul").toggle('slow');
+        })
+        window.addEventListener('resize', function(event){
+          var anchoVentana = window.innerWidth;
+    
+          if(anchoVentana > 768){
+            ulMenu.style.display = ""; 
+            mostrar();
+            ulMenu = document.querySelector('.ulMenu');
+            ulMenu.style.display = 'block';
+          }
+        })
+      </script>
+</body>
+
+</html>
