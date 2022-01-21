@@ -122,7 +122,10 @@ li a:hover {
     
   }
   .fac{
+    height: 40px;
+    
     padding: 2px;
+    font-size: 15px;
   }
   .hide {
     display: block;
