@@ -66,6 +66,7 @@ p {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 0.25s;
+  
 }
 .tarjeta:hover {
   transform: translateY(-15px);
@@ -105,7 +106,17 @@ p {
 }
 
 /*--------------------------------Estilo barra nav de Lorem---------------------------------------*/
+.contenedor_ascensor {
+  margin: auto;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  background-color: #bfc9ca;
+  border-radius: 2px;
+}
 .ascensor {
+  display: inline-block;
   text-decoration: none;
   padding: 15px;
   color: #17202a;
@@ -114,17 +125,20 @@ p {
   background-color: #616a6b;
   padding: 9px;
 }
-.contenedor_ascensor {
-  width: 100%;
-  gap: 20px;
-  margin-top: 20px;
-  padding: 15px;
-  border: none;
-  background-color: #bfc9ca;
-  border-radius: 2px;
+@media screen and (max-width:500px){
+  .ascensor{
+    font-size: small;
+  }
 }
 
 /*-----------------------------------------Estilos boton Volver----------------------------*/
+.btn_contenedor {
+  margin-left: 30px;
+  top: 0;
+  border: none;
+  position: fixed;
+  margin-top: 80px;
+}
 .btn_volver {
   text-decoration: none;
   color: white;
@@ -134,21 +148,20 @@ p {
   background-color: #1966ff;
   border-radius: 3px;
 }
-
 .btn_contenedor:hover {
   background-color: #4483ff;
 }
 
-.btn_contenedor {
-  margin-left: 30px;
-  top: 0;
-  border: none;
-  position: fixed;
-  margin-top: 80px;
+@media screen and (max-width:500px){
+  .btn_contenedor{
+    margin-left: 0px;
+    margin-top: 150px;
+  } 
+  .btn_volver{
+    padding: 15px;
+  }
 }
-@media screen and (max-width: 500px){
 
-}
 /*-------------------------------------------Estilos Carrusel---------------------------------*/
 .carrusel,
 .slide,
