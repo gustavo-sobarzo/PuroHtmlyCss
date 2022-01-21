@@ -75,12 +75,12 @@ h2 {
   margin-bottom: 15px;
 }
 
-/*--------------------------------------------------------Estilo Titulo--------------------------------*/
+/*-------------------------------------Estilo Titulo--------------------------------*/
 h1 {
   color: #1d3557;
 }
 
-/*-------------------------------------------Estilos de Barra Navegacion-----------------------------*/
+/*-----------------------------Estilos de Barra Navegacion-----------------------------*/
 ul {
   list-style-type: none;
   background-color: #457b9d;
@@ -154,6 +154,7 @@ ol li::after {
 
 /*----------------------------Estilos de Tabla--------------------------*/
 .contTabla {
+  
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -180,9 +181,6 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
   background-color: #a8dadc;
-}
-.contTabla {
-  border: none;
 }
 
 /*------------------------Listas de Descripcion----------------------*/
@@ -227,13 +225,13 @@ tr:nth-child(odd) {
   color: #fbfbfb;
 }
 .contenedorFooter .descripcionFoot{
-  font-size: smaller;
+  font-size: 9px;
   justify-content: center;
   text-align: justify;
   color: #457b9d;
 }
 .contenedorFooter .end{
-  font-size: small;
+  font-size: 10px;
   color: #457b9d;
   text-align: center;
   

@@ -48,7 +48,7 @@ p {
   border-radius: 4px;
 }
 
-/* Estilos Elementos body */
+/* ---------------------------------------Estilos Elementos body -----------------------------------*/
 .contenedorDos {
   border: none;
   background-color: #d6dbdf;
@@ -56,7 +56,7 @@ p {
   margin: auto;
 }
 
-/*Estilo tarjeta Java*/
+/*-------------------------------Estilo tarjeta Java------------------------------*/
 .tarjeta {
   box-sizing: border-box;
   height: 430px;
@@ -85,8 +85,7 @@ p {
   font-weight: 300;
   padding-bottom: 12px;
 }
-/*-----------Estilos tarjeta para dispositivos Mobiles---------------*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { /*Tarjetas mobile response*/
   .tarjeta p {
     font-size: small;
   }
@@ -95,7 +94,7 @@ p {
   }
 }
 
-/*Estilos tarjetas Lorem*/
+/*-----------------------------------Estilos tarjetas Lorem-------------------------------------*/
 
 #lorem1,
 #lorem2,
@@ -104,7 +103,7 @@ p {
   color: #2c3e50;
 }
 
-/*Estilo barra nav de Lorem*/
+/*--------------------------------Estilo barra nav de Lorem---------------------------------------*/
 .ascensor {
   text-decoration: none;
   padding: 15px;
@@ -124,7 +123,7 @@ p {
   border-radius: 2px;
 }
 
-/*Estilos boton Volver*/
+/*-----------------------------------------Estilos boton Volver----------------------------*/
 .btn_volver {
   text-decoration: none;
   color: white;
@@ -146,8 +145,10 @@ p {
   position: fixed;
   margin-top: 80px;
 }
+@media screen and (max-width: 500px){
 
-/*Estilos Carrusel*/
+}
+/*-------------------------------------------Estilos Carrusel---------------------------------*/
 .carrusel,
 .slide,
 .slider,
