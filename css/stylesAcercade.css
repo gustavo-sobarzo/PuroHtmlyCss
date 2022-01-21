@@ -59,6 +59,7 @@ p {
 /*-------------------------------Estilo tarjeta Java------------------------------*/
 .tarjeta {
   box-sizing: border-box;
+  max-width: 320px;
   height: 430px;
   border-radius: 8px;
   border: none;
