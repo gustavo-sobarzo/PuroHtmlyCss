@@ -11,6 +11,7 @@ body {
     #fbfbfb 40px
   );
   min-width: 360px;
+  
 }
 h2 {
   color: #3f37c9;
@@ -18,8 +19,7 @@ h2 {
 .contenedorPrincipal {
   width: 90%;
   gap: 20px;
-  max-width: 80%;
-  margin: 20px auto;
+  margin: auto;
   display: grid;
   border: none;
   border-radius: 4px;
@@ -121,7 +121,9 @@ li a:hover {
     justify-content: center;
     
   }
-
+  .fac{
+    padding: 2px;
+  }
   .hide {
     display: block;
   }
