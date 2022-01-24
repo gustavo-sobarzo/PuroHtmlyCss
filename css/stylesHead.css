@@ -1,0 +1,90 @@
+
+.cabecero {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  border-radius: 1px;  
+}
+.logo {
+  border: none;
+  background-color: white;
+  text-align: center;
+}
+.logo h1 {
+  font-size: 30px;
+}
+
+.logo .iniciales-logo {
+  padding: 5px;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/*-------------------------------------Estilo Titulo--------------------------------*/
+h1 {
+  color: #1d3557;
+  text-align: center;
+}
+
+/*-----------------------------Estilos de Barra Navegacion-----------------------------*/
+ul {
+  list-style-type: none;
+  background-color: #457b9d;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  transition: all ease-in-out 450ms;
+}
+li a:hover {
+  background-color: #1d3557;
+}
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #112d4e;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* ------------------------------------Menu responsivo----------------------------- */
+@media (max-width: 668px) {
+  ul li {
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+    
+  }
+  .fac{
+    height: 40px;
+    
+    padding: 2px;
+    font-size: 15px;
+  }
+  .hide {
+    display: block;
+    color: white;
+  }
+
+  nav ul {
+  display: none;
+
+  }
+  h1{
+      font-size: 18px;
+  }
+}

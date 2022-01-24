@@ -12,6 +12,7 @@ div {
 p {
   box-sizing: border-box;
 }
+
 .tarjeta,
 .info {
   margin-left: auto;
@@ -59,8 +60,8 @@ p {
 /*-------------------------------Estilo tarjeta Java------------------------------*/
 .tarjeta {
   box-sizing: border-box;
-  max-width: 320px;
-  height: 430px;
+  max-width: 300px;
+  height: auto;
   border-radius: 8px;
   border: none;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -133,11 +134,10 @@ p {
 
 /*-----------------------------------------Estilos boton Volver----------------------------*/
 .btn_contenedor {
-  margin-left: 30px;
-  top: 0;
+ height: auto;
+ padding: 20px;
+ background-color: #1966ff;
   border: none;
-  position: fixed;
-  margin-top: 80px;
 }
 .btn_volver {
   text-decoration: none;
@@ -152,15 +152,7 @@ p {
   background-color: #4483ff;
 }
 
-@media screen and (max-width:500px){
-  .btn_contenedor{
-    margin-left: 0px;
-    margin-top: 150px;
-  } 
-  .btn_volver{
-    padding: 15px;
-  }
-}
+
 
 /*-------------------------------------------Estilos Carrusel---------------------------------*/
 .carrusel,
