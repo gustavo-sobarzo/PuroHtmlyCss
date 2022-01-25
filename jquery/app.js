@@ -32,7 +32,7 @@ let agregarCliente = () => {
   let apellido = formulario['apellido'];
   let email = formulario['email'];
 
-  if (nombre !== '' && apellido !== '' && email !== '') {
+  if (nombre.value !== '' && apellido.value !== '' && email.value !== '') {
     let comprobarEmail = document.getElementById('email')
 
     emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
