@@ -33,15 +33,15 @@
       </ol>
     </div>
 
-    <div class="input">
+    <form id="form" onsubmit="return false" class="input">
       <label for="">Nombre:</label> 
       <input id="nombre" type="text" autocomplete="off">
       <label for="">Apellido:</label> 
       <input id="apellido" type="text" autocomplete="off">
       <label for="">Email:</label> 
       <input id="email" type="email" placeholder="example@email.com" autocomplete="off">
-      <button id="btnGuardar" onclick="guardarCliente()">Guardar</button>
-    </div>
+      <button id="btnGuardar" onclick="agregarCliente()">Guardar</button>
+    </form>
     
     <div class="contTabla">
       <table class="tabla">
