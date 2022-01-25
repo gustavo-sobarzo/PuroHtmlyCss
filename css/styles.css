@@ -74,6 +74,48 @@ ol li::after {
   border: none;
   text-align: center;
 }
+@media screen and (max-width: 500px){
+  .listasOrdenadas{
+    font-size: 13px;
+  }
+}
+/*-----------------------------------Estilos Input----------------------------------*/
+.input{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 3px;
+}
+@media screen and (max-width: 500px){
+  label{
+    font-size: 12px;
+  }
+}
+#btnGuardar{
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: #f1faee;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  background-color: #0479ff;
+  cursor: pointer;
+}
+#btnGuardar:hover{
+  background-color: #0254b3;
+}
+.elemento_eliminar--btn {
+  font-size: 22px;
+  color: #e63946;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  
+}
+.elemento_eliminar--btn:active { transform: translateY(2px); }
 
 /*----------------------------Estilos de Tabla--------------------------*/
 .contTabla {
@@ -113,56 +155,6 @@ tr:nth-child(odd) {
   text-align: center;
 }
 
-/*----------------------------Estilos footer---------------------*/
-.foot{
-  width: 100%;
-  background-color: #000;
-}
-.contenedorFooter{
-  background-color: #000;
-  margin: 20px ;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  width: 90%;
-  padding: 10px;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  align-items: center;
-}
-.contenedorFooter .titulo1Foot{
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  padding-top:1px;
-  padding-bottom: 1px;
-  color: #fbfbfb;
-  text-align: center;
-  border: 1px dashed #f1faee;
-}
-.titulo1Foot .logoFoter{
-  border: 1px solid #f1faee;
-  padding: 7px;
-  display: inline-block;
-}
-.contenedorFooter h4{
-  color: #fbfbfb;
-}
-.contenedorFooter .descripcionFoot{
-  font-size: 9px;
-  justify-content: center;
-  text-align: justify;
-  color: #457b9d;
-}
-.contenedorFooter .end{
-  font-size: 10px;
-  color: #457b9d;
-  text-align: center;
-}
 
-@media screen and (max-width: 500px){
-  .foot{
-    
-  }
-}
+
+

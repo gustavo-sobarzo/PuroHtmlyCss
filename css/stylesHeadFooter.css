@@ -88,3 +88,59 @@ li a:hover {
       font-size: 18px;
   }
 }
+
+/*----------------------------Estilos footer---------------------*/
+.foot{
+    width: 100%;
+    background-color: #000;
+  }
+  .contenedorFooter{
+    background-color: #000;
+    margin: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 90%;
+    padding: 10px;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+  .contenedorFooter .titulo1Foot{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-top:1px;
+    padding-bottom: 1px;
+    color: #fbfbfb;
+    text-align: center;
+    border: 1px dashed #f1faee;
+  }
+  .titulo1Foot{
+    background-color: #000;
+  }
+  .titulo1Foot .logoFoter{
+    border: 1px solid #f1faee;
+    padding: 7px;
+    display: inline-block;
+  }
+  .descripcionFoot{
+    background-color: #000;
+  }
+  .contenedorFooter h4{
+    color: #fbfbfb;
+  }
+  .contenedorFooter .descripcionFoot{
+    font-size: 9px;
+    justify-content: center;
+    text-align: justify;
+    color: #457b9d;
+  }
+  .contenedorFooter .end{
+    font-size: 10px;
+    color: #457b9d;
+    text-align: center;
+    background-color: #000;
+  }
+  

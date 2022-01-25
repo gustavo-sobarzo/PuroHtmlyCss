@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesHead.css">
     <link rel="stylesheet" href="/css/stylesAcercade.css">
     <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
     <script>
         $(function () {
             $("#header").load("/bodyFooter/head.html");
@@ -23,7 +22,7 @@
     <div id="header">
     </div>
     <div class="contenedorDos">
-        
+
         <h1 id="titulo_principal">Lenguajes de Programación</h1>
         <div class="contenedorGridCard">
             <div class="tarjeta" id="java" ">
@@ -152,8 +151,17 @@
         <div class="btn_contenedor">
             <a class="btn_volver" href="/index.html">volver</a>
         </div>
+        
+
     </div>
+    <footer id="footer"></foot>
+    <script>
+        $(function () {
+            $("#footer").load("/bodyFooter/footer.html");
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/jquery/animado.js"></script>
     <script>
         let verMas = (id) => {
             if (id === 'mas') {
