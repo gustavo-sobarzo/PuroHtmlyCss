@@ -1,4 +1,6 @@
-
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .cabecero {
   width: 100%;
   background-color: white;

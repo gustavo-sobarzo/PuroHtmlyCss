@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="css/styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/stylesIndex.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
@@ -17,70 +21,47 @@
   <title>Contenido</title>
 </head>
 
-<body onload="cargarApp()">
+<body>
   <div id="header">
   </div>
-  <div class="contenedorPrincipal">
-    
 
-    <div class="listasOrdenadas">
-      <h1>Listas Ordenadas</h1>
-      <ol>
-        <li>Universidad Java</li>
-        <li>Universidad Python</li>
-        <li>Universidad Excel</li>
-        <li>Universidad Word</li>
-      </ol>
+  <div class="contenedor">
+    <div class="contenedorGrid">
+      <div class="contenido">
+        aca ira el contenido
+      </div>
+
+      <div class="presentacion">
+        <div class="contImg">
+          <img class="img" src="/imagenes/perfil.jpg" alt="">
+        </div>
+        <div class="datosContacto">
+          <a class="linkedin" href="http://www.linkedin.com/in/gustavo-sobarzo-novoa-28ab99107" target="_blank"><i
+              class="material-icons" id="link">link</i>Linkedin</a>
+          <a class="linkedin" href="" target="_blank"><i class="material-icons" id="gps">location_on</i>Chile</a>
+          <a class="linkedin" href="" target="_blank" id="email"><i class="material-icons" id="emailicon">email</i>gustavo.a.sobarzo@gmail.com</a>
+          <a class="linkedin" href="" target="_blank"><i class="material-icons" id="phone">phone_iphone</i>+569-62715935</a>
+        </div>
+        <hr>
+        <div class="certificados">
+          <h2>CERTIFICADOS</h2>
+        </div>
+      </div>
     </div>
 
-    <form id="form" onsubmit="return false" class="input">
-      <label for="">Nombre:</label> 
-      <input id="nombre" type="text" autocomplete="off">
-      <label for="">Apellido:</label> 
-      <input id="apellido" type="text" autocomplete="off">
-      <label for="">Email:</label> 
-      <input id="email" type="email" placeholder="example@email.com" autocomplete="off">
-      <button id="btnGuardar" onclick="agregarCliente()">Guardar</button>
-    </form>
-    
-    <div class="contTabla">
-      <table class="tabla">
-        <caption>
-          Lista De Personas con Js
-        </caption>
-        <tr>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Email</th>
-          <th>Eliminar</th>
-        </tr>
-        <tbody id="tablita">
-        </tbody>
-      </table>
-    </div>
-
-    <div class="listaDescripcion">
-      <h1>Lenguajes de Programación (Lista de Descripción)</h1>
-      <dl>
-        <dt>Java:</dt>
-        <dd>Creador: james Gosling</dd>
-        <dt>Python:</dt>
-        <dd>Creador: Guido Van Rossum</dd>
-      </dl>
-    </div>
   </div>
 
   <div id="footer"></div>
-  
+
   <script>
     $(function () {
       $("#footer").load("bodyFooter/footer.html");
     });
   </script>
-  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
   <script src="/jquery/Cliente.js"></script>
   <script src="/jquery/app.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

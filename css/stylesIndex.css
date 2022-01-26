@@ -1,0 +1,101 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------------Estilos General Body----------------------------*/
+body {
+    min-width: 360px;
+  }
+.contenedor{
+    width: 90%;
+    margin: auto;
+    
+}
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------*/
+.presentacion{
+    background-color: #ced1d3;
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------------------------Estilo imagen perfil---------------------------------*/
+.contImg{
+    max-width: 250px;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------*/
+.datosContacto{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+    
+    display: grid;
+}
+.linkedin{
+    text-decoration: none;
+    color: #434CAB;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+.material-icons{
+    vertical-align: middle;
+    margin-right: 10px;
+    
+}
+@media screen and (max-width: 780px) {
+    #email{
+        font-size: 8px;
+
+    }
+    #emailicon, #gps, #link, #phone{
+        font-size: 13px;
+    }
+    .contenedorGrid{
+        grid-template-columns: 50% auto;
+    }
+    .contImg{
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .certificados{
+        font-size: small;
+    }
+    .presentacion{
+        
+        
+    }
+    .datosContacto{
+        max-width: 150px;
+    }
+}
+/*-----------------------------------------------------*/
+.certificados{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.certificados h2{
+    color: #3F3844;
+    font-size: 17px;
+    border-bottom: 1px solid;
+}

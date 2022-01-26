@@ -1,6 +1,7 @@
 const clientes = [new Cliente('Juan', 'Segura', 'juan@gmail.com'),
 new Cliente('Gustavo', 'Sobarzo', 'gustavo@gmail.com'),
-new Cliente('Maria', 'Lara', 'maria@gmail.com')];
+new Cliente('Maria', 'Lara', 'maria@gmail.com'),
+new Cliente('dasd', 'daasda', 'maria@gmail.com')];
 
 const cargarApp = () => {
   crearListaCliente();
@@ -33,6 +34,7 @@ let agregarCliente = () => {
   let email = formulario['email'];
 
   if (nombre.value !== '' && apellido.value !== '' && email.value !== '') {
+    
     clientes.push(new Cliente(nombre.value, apellido.value, email.value))
     crearListaCliente();
   } else {
@@ -40,3 +42,14 @@ let agregarCliente = () => {
   }
 }
 
+
+const busqueda = clientes.reduce((acc, cliente) => {
+  acc[cliente.email] = ++acc[cliente.email] || 0;
+  return acc;
+}, {});
+
+const duplicados = clientes.filter( (cliente) => {
+	return busqueda[cliente.email];
+});
+
+console.log(duplicados)

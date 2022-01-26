@@ -84,7 +84,13 @@ ol li::after {
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  gap: 3px;
+  border-radius: 8px;
+  gap: 8px;
+}
+#nombre, #apellido, #email{
+  border-radius: 2px;
+  padding: 7px;
+  border: 1px solid rgb(153, 153, 153);
 }
 @media screen and (max-width: 500px){
   label{
@@ -119,33 +125,35 @@ ol li::after {
 
 /*----------------------------Estilos de Tabla--------------------------*/
 .contTabla {
-  
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  
 }
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid rgb(148, 142, 142);
   border-collapse: collapse;
   padding: 5px;
 }
 caption {
-  color: #e63946;
-  font-family: "Trocchi", serif;
+  color: #000000;
+  
   font-size: 20px;
   margin-bottom: 5px;
 }
 th {
   color: #f1faee;
-  background-color: #1d3557;
+  background-color: #547db8;
+}
+tr{
+  text-align: center;
 }
 tr:nth-child(even) {
   background-color: #f1faee;
 }
 tr:nth-child(odd) {
-  background-color: #a8dadc;
+  background-color: #add8f5;
 }
 
 /*------------------------Listas de Descripcion----------------------*/
