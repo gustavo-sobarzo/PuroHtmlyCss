@@ -1,7 +1,7 @@
 const clientes = [new Cliente('Juan', 'Segura', 'juan@gmail.com'),
 new Cliente('Gustavo', 'Sobarzo', 'gustavo@gmail.com'),
 new Cliente('Maria', 'Lara', 'maria@gmail.com'),
-new Cliente('dasd', 'daasda', 'maria@gmail.com')];
+new Cliente('dasd', 'daasda', 'sdads@gmail.com')];
 
 const cargarApp = () => {
   crearListaCliente();
@@ -9,7 +9,7 @@ const cargarApp = () => {
 
 let crearClienteHTML = (cliente) => {
   let formatoClienteHtml = `<tr><td>${cliente.nombre}</td><td>${cliente.apellido}</td><td>${cliente.email}</td>
-  <td><button class="elemento_eliminar--btn" onclick="eliminarCliente(${cliente.id})"><ion-icon name="close-circle-outline"></ion-icon></button></td></tr>`;
+  <td><button class="elemento_eliminar--btn" onclick="eliminarCliente(${cliente.idCliente})"><ion-icon name="close-circle-outline"></ion-icon></button></td></tr>`;
   return formatoClienteHtml;
 }
 
@@ -22,7 +22,7 @@ let crearListaCliente = () => {
 }
 
 const eliminarCliente = (id) => {
-  let clienteEleiminar = clientes.findIndex(cliente => cliente.id === id);
+  let clienteEleiminar = clientes.findIndex(cliente => id === cliente.idCliente);
   clientes.splice(clienteEleiminar, 1);
   crearListaCliente();
 }
@@ -34,7 +34,7 @@ let agregarCliente = () => {
   let email = formulario['email'];
 
   if (nombre.value !== '' && apellido.value !== '' && email.value !== '') {
-    
+
     clientes.push(new Cliente(nombre.value, apellido.value, email.value))
     crearListaCliente();
   } else {
@@ -48,8 +48,8 @@ const busqueda = clientes.reduce((acc, cliente) => {
   return acc;
 }, {});
 
-const duplicados = clientes.filter( (cliente) => {
-	return busqueda[cliente.email];
+const duplicados = clientes.filter((cliente) => {
+  return busqueda[cliente.email];
 });
 
 console.log(duplicados)

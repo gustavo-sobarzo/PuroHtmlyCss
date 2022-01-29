@@ -1,10 +1,13 @@
 class Cliente {
     static contadorId = 0;
     constructor(nombre, apellido, email){
-        this._idUsuario = ++Cliente.contadorId;
+        this._id = ++Cliente.contadorId;
         this._nombre = nombre;
         this._apellido = apellido;
         this._email = email;
+    }
+    get idCliente(){
+        return this._id;
     }
 
     get nombre(){
