@@ -35,21 +35,25 @@ let agregarCliente = () => {
 
   if (nombre.value !== '' && apellido.value !== '' && email.value !== '') {
 
-    clientes.push(new Cliente(nombre.value, apellido.value, email.value))
-    crearListaCliente();
+    if (validarEmail(email) === true) {
+      clientes.push(new Cliente(nombre.value, apellido.value, email.value))
+      crearListaCliente();
+    }
+
   } else {
     alert('hay campos vacios!')
   }
 }
 
 
-const busqueda = clientes.reduce((acc, cliente) => {
-  acc[cliente.email] = ++acc[cliente.email] || 0;
-  return acc;
-}, {});
-
-const duplicados = clientes.filter((cliente) => {
-  return busqueda[cliente.email];
-});
-
-console.log(duplicados)
+function validarEmail(campo) {
+  if (/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|es)+$/.test(campo.value)) {
+    alert("La dirección de email " + campo.value + " es correcta.");
+    let emailValidado = true;
+    return emailValidado;
+  } else {
+    alert("La dirección de email es incorrecta.");
+    let emailValidado = false;
+    return emailValidado;
+  }
+}
