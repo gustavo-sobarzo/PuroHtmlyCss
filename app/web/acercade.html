@@ -12,7 +12,7 @@
         </script>
     <script>
         $(function () {
-            $("#header").load("/bodyFooter/head.html");
+            $("#header").load("/headFooter/head.html");
         });
     </script>
     <title>Document</title>
@@ -151,33 +151,34 @@
         <div class="btn_contenedor">
             <a class="btn_volver" href="/index.php">volver</a>
         </div>
-        
+
 
     </div>
-    <footer id="footer"></foot>
-    <script>
-        $(function () {
-            $("#footer").load("/bodyFooter/footer.html");
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="/jquery/animado.js"></script>
-    <script>
-        let verMas = (id) => {
-            if (id === 'mas') {
-                document.getElementById('desplegar').style.display = 'block';
-                document.getElementById('leerMas').style.display = 'none';
-                document.getElementById('leerMenos').style.display = 'block';
+    <footer id="footer">
+        </foot>
+        <script>
+            $(function () {
+                $("#footer").load("/headFooter/footer.html");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="/app/js/animado.js"></script>
+        <script>
+            let verMas = (id) => {
+                if (id === 'mas') {
+                    document.getElementById('desplegar').style.display = 'block';
+                    document.getElementById('leerMas').style.display = 'none';
+                    document.getElementById('leerMenos').style.display = 'block';
+                }
             }
-        }
-        let verMenos = (id) => {
-            if (id === 'menos') {
-                document.getElementById('desplegar').style.display = 'none';
-                document.getElementById('leerMenos').style.display = 'none';
-                document.getElementById('leerMas').style.display = 'block';
+            let verMenos = (id) => {
+                if (id === 'menos') {
+                    document.getElementById('desplegar').style.display = 'none';
+                    document.getElementById('leerMenos').style.display = 'none';
+                    document.getElementById('leerMas').style.display = 'block';
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>

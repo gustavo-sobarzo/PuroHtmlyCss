@@ -15,7 +15,7 @@
     </script>
   <script>
     $(function () {
-      $("#header").load("bodyFooter/head.html");
+      $("#header").load("headFooter/head.html");
     });
   </script>
   <title>Contenido</title>
@@ -81,18 +81,22 @@
 
   </div>
 
+  <div class="appPresupuesto">
+    <h1>Aplicación presupuesto</h1>
+  </div>
+
   <div id="footer"></div>
 
   <script>
     /*Cargamos footer.hmtl mediante la funcion load de JS asignando un id a la etiqueta a renderizar*/
     $(function () {
-      $("#footer").load("bodyFooter/footer.html");
+      $("#footer").load("headFooter/footer.html");
     });
   </script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-  <script src="/jquery/Cliente.js"></script>
-  <script src="/jquery/app.js"></script>
+  <script src="/app/js/Cliente.js"></script>
+  <script src="/app/js/app.js"></script>
 </body>
 
 </html>

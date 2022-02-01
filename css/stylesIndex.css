@@ -4,17 +4,26 @@
 /*----------------------------Estilos General Body----------------------------*/
 body {
     min-width: 335px;
+    background: white;
   }
 .contenedor{
-    width: 90%;
-    margin: auto;
-    
+    max-width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+   background: #EBF0FD;
 }
 .contenedorGrid{
     display: grid;
     grid-template-columns: 70% 30%;
     gap: 10px;
     box-sizing: border-box;
+}
+@media screen and (max-width: 500px){
+    .contenedor{
+        max-width: 100%;
+    }
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -87,6 +96,7 @@ body {
 /*-----------------------Estilos Datos contacto---------------------------*/
 .presentacion{
   max-height: auto;
+  margin-top: 25px;
 }
 .datosContacto{
     margin-top: 10px;

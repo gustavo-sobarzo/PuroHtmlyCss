@@ -11,7 +11,7 @@
     </script>
   <script>
     $(function () {
-      $("#header").load("/bodyFooter/head.html");
+      $("#header").load("/headFooter/head.html");
     });
   </script>
   <title>Contenido</title>
@@ -21,7 +21,7 @@
   <div id="header">
   </div>
   <div class="contenedorPrincipal">
-    
+
 
     <div class="listasOrdenadas">
       <h1>Listas Ordenadas</h1>
@@ -34,15 +34,15 @@
     </div>
 
     <form id="form" onsubmit="return false" class="input">
-      <label for="">Nombre:</label> 
+      <label for="">Nombre:</label>
       <input id="nombre" type="text" autocomplete="off">
-      <label for="">Apellido:</label> 
+      <label for="">Apellido:</label>
       <input id="apellido" type="text" autocomplete="off">
-      <label for="">Email:</label> 
+      <label for="">Email:</label>
       <input id="email" type="email" placeholder="example@email.com" autocomplete="off">
       <button id="btnGuardar" onclick="agregarCliente()">Guardar</button>
     </form>
-    
+
     <div class="contTabla">
       <table class="tabla">
         <caption>
@@ -71,16 +71,17 @@
   </div>
 
   <div id="footer"></div>
-  
+
   <script>
     $(function () {
-      $("#footer").load("/bodyFooter/footer.html");
+      $("#footer").load("/headFooter/footer.html");
     });
   </script>
-  
-  <script src="/jquery/Cliente.js"></script>
-  <script src="/jquery/app.js"></script>
+
+  <script src="/app/js/Cliente.js"></script>
+  <script src="/app/js/app.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
