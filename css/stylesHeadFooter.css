@@ -10,7 +10,7 @@
 }
 .logo {
   border: none;
-  background: url('https://c.neh.tw/thumb/f/720/comrawpixel2282591.jpg');
+  background: url('/imagenes/banner.jpg');
   text-align: center;
   background-size: cover;
   background-position: center;
