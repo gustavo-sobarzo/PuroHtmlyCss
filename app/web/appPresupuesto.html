@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesHeadFooter.css">
+    <link rel="stylesheet" href="/css/appPresupuesto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("/headFooter/head.html");
+        });
+    </script>
+    <title>App Presupuesto</title>
+</head>
+
+<body onload="cargarApp()">
+    <div id="header"></div>
+
+    <div class="contenedor">
+        <div class="contenedorGrid">
+            <div class="presupuesto">
+                <h1 class="tituloPre">Presupuesto Disponible</h1>
+                <div class="totalPresupuesto" id="presupuesto">23.000</div>
+                <div class="contEgreIngre">
+                    <div class="contIngreso">
+                        <div class="textIngre">Ingresos</div>
+                        <div class="ingresos" id="totIngresos">50.000</div>
+                        
+                    </div>
+                    <div class="contEgre">
+                        <div class="contEgreso">
+                            <div class="textEgre">Egresos</div>
+                            <div class="egresos" id="totEgresos">40.000</div>
+                            <div id="porcentaje"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contListasIngreEgre">
+                <div class="ingresos">
+                    <h2 class="tituloIngre">Ingresos</h2>
+                    <div id="listaIngresos">
+                        
+                    </div>
+                </div>
+                <div class="egresos">
+                    <h2 class="tituloEgreso">Egreso</h2>
+                    <div id="listaEgresos">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $("#footer").load("/headFooter/footer.html");
+        });
+    </script>
+    <script src="/app/js/appPresupuesto/Dato.js"></script>
+    <script src="/app/js/appPresupuesto/Egreso.js"></script>
+    <script src="/app/js/appPresupuesto/Ingreso.js"></script>
+    <script src="/app/js/appPresupuesto/appPresupuesto.js"></script>
+</body>
+
+</html>
