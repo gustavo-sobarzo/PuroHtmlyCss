@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/stylesHeadFooter.css">
     <link rel="stylesheet" href="/css/appPresupuesto.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.0.3/autoNumeric.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
@@ -44,13 +46,21 @@
             </div>
 
             <div class="contenedorInput">
-                <form action="" id="form" onsubmit="return false">
+                <form class="formulario" action="" id="form" onsubmit="return false">
                     <select class="select" name="" id="select">
                         <option class="optionA" value="ingreso">+</option>
                         <option class="optionB" value="egreso">-</option>
                     </select>
-                    <input id="descripcion" class="inputs" placeholder="descripción" type="text" autocomplete="off">
-                    <input id="valor" class="inputs" placeholder="valor" type="number" autocomplete="off">
+                    <input id="descripcion" class="inputs" placeholder="descripción" type="text" autocomplete="off"
+                        maxlength="15">
+                    <input 
+                        id="valor" 
+                        class="inputs" 
+                        placeholder="valor" 
+                        type="number" 
+                        autocomplete="off" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        maxlength="8">
                     <button class="btnAddDato" onclick="agregarDato()"><i
                             class="material-icons">check_circle</i></button>
                 </form>
@@ -80,6 +90,7 @@
             $("#footer").load("/headFooter/footer.html");
         });
     </script>
+   
     <script src="/app/js/appPresupuesto/Dato.js"></script>
     <script src="/app/js/appPresupuesto/Egreso.js"></script>
     <script src="/app/js/appPresupuesto/Ingreso.js"></script>

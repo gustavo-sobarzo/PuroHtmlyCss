@@ -134,3 +134,9 @@ function limpiar() {
     document.getElementById("descripcion").value = "";
     document.getElementById("valor").value = "";
 }
+
+$('#valor').autoNumeric('init', {
+    aSep : '.',
+    aDec : '.',
+    mDec : '2'
+    });
