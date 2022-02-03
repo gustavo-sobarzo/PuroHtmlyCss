@@ -29,7 +29,7 @@
     <div class="contenedorGrid">
       <div class="contenido">
         <h2 id="tituloCont">Acerca de:</h2>
-        <p class="parrafoCont">Soy un estudiante de ingeniería en informática, muy responsable ,creativo y autodidacta.
+        <p class="parrafoCont">Soy un estudiante de ingeniería en informática, muy responsable, creativo y autodidacta.
           No tengo miedo a la
           hora de aprender algo nuevo, me encanta innovar y aportar nuevas ideas, esa es una de las tantas cosas
           que me motiva a llegar a trabajar en el área de desarrollo de software.</p>

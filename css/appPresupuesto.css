@@ -5,18 +5,17 @@
 body {
   min-width: 335px;
   background: white;
+  margin: auto;
 }
-.contenedor {
-  max-width: 90%;
+.contenedor { 
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 40px;
-  background: #ebf0fd;
+  background: #fff;
 }
 .contenedorGrid {
   display: grid;
   grid-template-columns: 1fr;
+
   margin-left: auto;
   margin-right: auto;
   gap: 10px;
@@ -76,7 +75,6 @@ body {
   text-transform: uppercase;
 }
 
-
 /*-----------------------Estilo Listas Ingreso Egreso---------------------------------*/
 
 .contListasIngreEgre {
@@ -86,6 +84,12 @@ body {
   gap: 100px;
   margin-left: auto;
   margin-right: auto;
+}
+.tituloIngre {
+  color: #1caab7;
+}
+.tituloEgreso {
+  color: #ff6046;
 }
 #listaIngresos {
   display: grid;
@@ -113,12 +117,12 @@ body {
 .descripcion {
   vertical-align: middle;
   line-height: 25px;
-  border-bottom: 0.4px solid black;
+  border-bottom: 0.4px solid rgb(194, 163, 163);
 }
 .valor {
   vertical-align: middle;
   line-height: 25px;
-  border-bottom: 0.4px solid black;
+  border-bottom: 0.4px solid rgb(194, 163, 163);
 }
 @media screen and (max-width: 500px) {
   .contListasIngreEgre {
@@ -130,4 +134,28 @@ body {
   #listaIngresos {
     max-width: 360px;
   }
+}
+/*---------------Estilo Inputs Agregar Dato---------------------------------*/
+.contenedorInput {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #f7f7f7;
+}
+.select, .inputs, .btnAddDato{
+  padding: 8px;
+  border: 1px solid #aaa;
+}
+
+.btnAddDato{
+  background: none;
+  border: none;
+}
+.optionA{
+  background: #1CAAB7;
+}
+.optionB{
+  background: #FF6046;
 }

@@ -31,7 +31,7 @@
                     <div class="contIngreso">
                         <div class="textIngre">Ingresos</div>
                         <div class="ingresos" id="totIngresos">50.000</div>
-                        
+
                     </div>
                     <div class="contEgre">
                         <div class="contEgreso">
@@ -43,17 +43,30 @@
                 </div>
             </div>
 
+            <div class="contenedorInput">
+                <form action="" id="form" onsubmit="return false">
+                    <select class="select" name="" id="select">
+                        <option class="optionA" value="ingreso">+</option>
+                        <option class="optionB" value="egreso">-</option>
+                    </select>
+                    <input id="descripcion" class="inputs" placeholder="descripción" type="text" autocomplete="off">
+                    <input id="valor" class="inputs" placeholder="valor" type="number" autocomplete="off">
+                    <button class="btnAddDato" onclick="agregarDato()"><i
+                            class="material-icons">check_circle</i></button>
+                </form>
+            </div>
+
             <div class="contListasIngreEgre">
                 <div class="ingresos">
                     <h2 class="tituloIngre">Ingresos</h2>
                     <div id="listaIngresos">
-                        
+
                     </div>
                 </div>
                 <div class="egresos">
                     <h2 class="tituloEgreso">Egreso</h2>
                     <div id="listaEgresos">
-                        
+
                     </div>
                 </div>
             </div>

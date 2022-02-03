@@ -52,14 +52,14 @@ const formatoPorcentaje = (valor) => {
 
 let crearIgresoHtml = (ingreso) => {
     let ingresoHtml = `<div class="descripcion">${ingreso.descripcion}</div>
-    <div class="valor">${formatoMoneda(ingreso.valor)}</div>
+    <div class="valor" style="color: #1CAAB7">+${formatoMoneda(ingreso.valor)}</div>
     <button class="btnEliminar" onclick="eliminarIngreso()"><i class="material-icons">delete_forever</i></button>`
     return ingresoHtml;
 }
 
-let crearListaIngresos = () =>{
+let crearListaIngresos = () => {
     let listaIngresos = '';
-    for(let ingreso of ingresos){
+    for (let ingreso of ingresos) {
         listaIngresos += crearIgresoHtml(ingreso);
     }
     return document.getElementById('listaIngresos').innerHTML = listaIngresos;
@@ -67,7 +67,7 @@ let crearListaIngresos = () =>{
 
 let crearEgresoHtml = (egreso) => {
     let egresoHtml = `<div class="descripcion">${egreso.descripcion}</div>
-    <div class="valor">${formatoMoneda(egreso.valor)}</div>
+    <div class="valor" style="color: #FF6046">-${formatoMoneda(egreso.valor)}</div>
     <button class="btnEliminar" onclick="eliminarEgreso()"><i class="material-icons">delete_forever</i></button>`
     return egresoHtml;
 }
@@ -80,16 +80,57 @@ let listaEgreso = () => {
     return document.getElementById('listaEgresos').innerHTML = listaEgresos;
 }
 
-const eliminarIngreso = (id)=>{
+const eliminarIngreso = (id) => {
     let ingresoEliminar = ingresos.findIndex(ingreso => ingreso.id === id);
     ingresos.splice(ingresoEliminar, 1);
     cargarCabecero();
     crearListaIngresos();
 }
 
-const eliminarEgreso = (id)=>{
+const eliminarEgreso = (id) => {
     let egresoEliminar = egresos.findIndex(egreso => egreso.id === id);
     egresos.splice(egresoEliminar, 1);
     cargarCabecero();
     listaEgreso();
+}
+
+const agregarDato = () => {
+    let form = document.forms['form']
+    let descripcion = form['descripcion'].value;
+    let valor = form['valor'].value;
+    let select = form['select'].value;
+    let valorNumero = parseInt(valor);
+
+    if (!validaVacio(descripcion) && !validaVacio(valor)) {
+        if (select === 'ingreso') {
+            ingresos.push(new Ingreso(descripcion, valorNumero));
+            cargarCabecero();
+            crearListaIngresos();
+            limpiar();
+        } else if (select === 'egreso') {
+            egresos.push(new Egreso(descripcion, valorNumero))
+            cargarCabecero();
+            listaEgreso();
+            limpiar();
+        }
+    } else {
+        alert('complete todos los campos')
+    }
+
+}
+
+function validaVacio(valor) {
+    valor = valor.replace("&nbsp;", "");
+    valor = valor == undefined ? "" : valor;
+    if (!valor || 0 === valor.trim().length) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function limpiar() {
+    document.getElementById("descripcion").value = "";
+    document.getElementById("valor").value = "";
 }

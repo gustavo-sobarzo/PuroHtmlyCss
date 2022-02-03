@@ -11,6 +11,7 @@ body {
     #fbfbfb 40px
   );
   min-width: 330px;
+  margin: auto;
 }
 h2 {
   color: #3f37c9;

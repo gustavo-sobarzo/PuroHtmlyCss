@@ -4,6 +4,7 @@ body {
   background-color: #d5d8dc;
   min-width: 330px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
 }
 .contenedor {
   width: 90%;
