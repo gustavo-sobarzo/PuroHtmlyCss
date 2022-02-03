@@ -53,7 +53,7 @@ const formatoPorcentaje = (valor) => {
 let crearIgresoHtml = (ingreso) => {
     let ingresoHtml = `<div class="descripcion">${ingreso.descripcion}</div>
     <div class="valor" style="color: #1CAAB7">+${formatoMoneda(ingreso.valor)}</div>
-    <button class="btnEliminar" onclick="eliminarIngreso()"><i class="material-icons">delete_forever</i></button>`
+    <button class="btnEliminar" onclick="eliminarIngreso(${ingreso.idIngreso})"><i class="material-icons">delete_forever</i></button>`
     return ingresoHtml;
 }
 
@@ -68,7 +68,7 @@ let crearListaIngresos = () => {
 let crearEgresoHtml = (egreso) => {
     let egresoHtml = `<div class="descripcion">${egreso.descripcion}</div>
     <div class="valor" style="color: #FF6046">-${formatoMoneda(egreso.valor)}</div>
-    <button class="btnEliminar" onclick="eliminarEgreso()"><i class="material-icons">delete_forever</i></button>`
+    <button class="btnEliminar" onclick="eliminarEgreso(${egreso.idEgreso})"><i class="material-icons">delete_forever</i></button>`
     return egresoHtml;
 }
 
