@@ -74,21 +74,21 @@ let crearEgresoHtml = (egreso) => {
 
 let listaEgreso = () => {
     let listaEgresos = '';
-    for (let egreso of egresos) {
+    for (let egreso of egresos) {  
         listaEgresos += crearEgresoHtml(egreso);
     }
     return document.getElementById('listaEgresos').innerHTML = listaEgresos;
 }
 
-const eliminarIngreso = (id) => {
-    let ingresoEliminar = ingresos.findIndex(ingreso => ingreso.id === id);
+let eliminarIngreso = (id) => {
+    let ingresoEliminar = ingresos.findIndex( ingreso => ingreso.idIngreso === id);
     ingresos.splice(ingresoEliminar, 1);
     cargarCabecero();
     crearListaIngresos();
 }
 
-const eliminarEgreso = (id) => {
-    let egresoEliminar = egresos.findIndex(egreso => egreso.id === id);
+let eliminarEgreso = (id) => {
+    let egresoEliminar = egresos.findIndex( egreso => egreso.idEgreso === id);
     egresos.splice(egresoEliminar, 1);
     cargarCabecero();
     listaEgreso();
@@ -135,8 +135,3 @@ function limpiar() {
     document.getElementById("valor").value = "";
 }
 
-$('#valor').autoNumeric('init', {
-    aSep : '.',
-    aDec : '.',
-    mDec : '2'
-    });

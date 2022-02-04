@@ -1,8 +1,8 @@
 class Egreso extends Dato{
-    static idEgreso = 0;
+    static contadorEgreso = 0;
     constructor(descripcion, valor){
         super(descripcion, valor);
-        this._idEgreso = ++Egreso.idEgreso;
+        this._idEgreso = ++Egreso.contadorEgreso;
     }
     get idEgreso(){
         return this._idEgreso;
