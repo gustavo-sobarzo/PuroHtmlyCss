@@ -10,7 +10,7 @@
 }
 .logo {
   border: none;
-  background: url('/imagenes/banner.jpg');
+  background: url('/imagenes/banner2.jpg');
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -107,7 +107,7 @@ li a:hover {
   }
   .contenedorFooter{
     background-color: #000;
-    margin: 20px ;
+    
     margin-left: auto;
     margin-right: auto;
     display: grid;

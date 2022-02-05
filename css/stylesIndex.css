@@ -1,35 +1,95 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*----------------------------Estilos General Body----------------------------*/
 body {
-    min-width: 335px;
-    background: white;
-    margin: auto;
+  min-width: 335px;
+  background: white;
+  margin: auto;
+}
+.contenedor {
+  margin-top: 30px;
+
+  padding-bottom: 40px;
+  background: url("/imagenes/banner.jpg");
+  background-repeat: round;
+}
+.contenedorGrid {
+  display: grid;
+  grid-template-columns: 60% auto;
+  gap: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 500px) {
+  .contenedor {
+    max-width: 100%;
   }
-.contenedor{
-    max-width: 90%;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 40px;
-   background: #EBF0FD;
-}
-.contenedorGrid{
-    display: grid;
-    grid-template-columns: 60% auto;
-    gap: 10px;
-    box-sizing: border-box;
-}
-@media screen and (max-width: 500px){
-    .contenedor{
-        max-width: 100%;
-    }
 }
 
 /*------------------------------------------------------------------------------------*/
-.presentacion{
-    background-color: #ced1d3;
+
+/*-------------------------Estilo Contenido----------------------------------------*/
+.contenido {
+  max-width: 427px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tituloCont {
+  font-size: 19px;
+  color: #3f3844;
+  border-bottom: 1px solid;
+}
+.parrafoCont {
+  text-align: justify;
+  color: #3b373d;
+  font-size: 14px;
+}
+@media screen and (max-width: 500px) {
+  .parrafoCont {
+    font-size: 12px;
+  }
+}
+/*-------------------------------Estilo contenedor imagenes-----------------------------------------*/
+.contenedorImages {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5, auto);
+  text-align: center;
+}
+
+.imageTech {
+  max-width: 100px;
+  transition: transform 1s;
+}
+.imageTech:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 477px) {
+  .imageTech {
+    max-width: 60px;
+  }
+}
+/*-------------------------------Estilo imagen perfil---------------------------------*/
+.contImg {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  background: #47a8b5;
+  border: 6px solid #0c9aad;
+}
+
+/*-----------------------Estilos Datos contacto---------------------------*/
+.presentacion {
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
     max-width: 200px;
     display: grid;
     grid-template-columns: 1fr;
@@ -39,146 +99,100 @@ body {
     padding: 5px;
     border-radius: 3px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-/*-------------------------Estilo Contenido----------------------------------------*/
-.contenido{
-    max-width: 427px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#tituloCont{
-    font-size: 19px;
-    color: #3F3844;
-    border-bottom: 1px solid;
-}
-.parrafoCont{
-    text-align: justify;
-    color: #3b373d;
-    font-size: 14px;
-}
-@media screen and (max-width: 500px){
-    .parrafoCont{
-        font-size: 12px;
-    }
-}
-/*-------------------------------Estilo contenedor imagenes-----------------------------------------*/
-.contenedorImages{
-  display: grid;
-  grid-template-columns: 1fr 2fr ;
-  grid-template-rows: repeat(5, auto);
-  text-align: center;
-}
-
-.imageTech{
-  max-width: 100px;
-}
-
-
-@media screen and (max-width: 477px){
-  .imageTech{
-    max-width: 60px;
   }
+.datosContacto {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 20px;
+  display: grid;
 }
-/*-------------------------------Estilo imagen perfil---------------------------------*/
-.contImg{
-    max-width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+.linkedin {
+  text-decoration: none;
+  color: #17171b;
+  font-size: 10px;
+  margin-bottom: 8px;
 }
-.img{
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100px;
-    background: #47A8B5;
+.universidad {
+  color: #27293f;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
-
-/*-----------------------Estilos Datos contacto---------------------------*/
-.presentacion{
-  max-height: auto;
-  margin-top: 25px;
+.material-icons {
+  vertical-align: middle;
+  margin-right: 10px;
+  color: #434cab;
 }
-.datosContacto{
-    margin-top: 10px;
-    text-align: left;
-    margin-left: 20px;
-    display: grid;
+.certificados {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.linkedin{
-    text-decoration: none;
-    color: #434CAB;
-    font-size: 10px;
-    margin-bottom: 8px;
-}
-.universidad{
-    color: #434CAB;
-    font-size: 10px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-.material-icons{
-    vertical-align: middle;
-    margin-right: 10px;
-    
-}
-.certificados{
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.certificados h2{
-    color: #3F3844;
-    font-size: 17px;
-    border-bottom: 1px solid;
+.certificados h2 {
+  color: #3f3844;
+  font-size: 17px;
+  border-bottom: 1px solid;
 }
 @media screen and (max-width: 500px) {
-    #email{
-        font-size: 7px;
+  #email {
+    font-size: 7px;
+  }
+  #emailicon,
+  #gps,
+  #link,
+  #phone {
+    font-size: 13px;
+  }
+  .contenedorGrid {
+    grid-template-columns: 50% auto;
+  }
+  .contImg {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .certificados {
+    font-size: small;
+  }
+  .datosContacto {
+    max-width: 150px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #email {
+    font-size: 8px;
+    margin-left: 1px;
+  }
+  #emailicon,
+  #gps,
+  #link,
+  #phone {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 676px) {
+  #emailicon,
+  #gps,
+  #link,
+  #phone {
+    font-size: 13px;
+  }
+  .contenedorGrid {
+    grid-template-columns: 50% auto;
+  }
+}
 
-    }
-    #emailicon, #gps, #link, #phone{
-        font-size: 13px;
-    }
-    .contenedorGrid{
-        grid-template-columns: 50% auto;
-    }
-    .contImg{
-        max-width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-    .certificados{
-        font-size: small;
-    }
-    .datosContacto{
-        max-width: 150px;
-        margin-left: 5px;
-    }
-    .presentacion{
-      max-height: 430px;
-    }
+.appPresupuesto {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-@media screen and (max-width: 780px){
-    #email{
-        font-size: 8px;
-        margin-left: 1px;
-    }
-    #emailicon, #gps, #link, #phone{
-        font-size: 15px;
-    }
-    
-}
-@media screen and (max-width: 676px){
-    #emailicon, #gps, #link, #phone{
-        font-size: 13px;
-    }
-    .contenedorGrid{
-        grid-template-columns: 50% auto;
-    }
-    .presentacion{
-      max-height: 430px;
-    }
+.imagenCns {
+  width: 100%;
 }
 
+/*Estilos footer*/
+#footer {
+  margin-top: none;
+  margin-bottom: none;
+}

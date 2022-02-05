@@ -82,7 +82,8 @@
   </div>
 
   <div class="appPresupuesto">
-    <h1>Aplicación presupuesto</h1>
+    
+    <img class="imagenCns" src="/imagenes/construcciongif.gif" alt="">
   </div>
 
   <div id="footer"></div>
