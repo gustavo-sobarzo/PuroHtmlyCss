@@ -38,6 +38,8 @@ body {
   text-align: justify;
   color: #3b373d;
   font-size: 14px;
+  line-height: 20px;
+  margin-left: 6px;
 }
 @media screen and (max-width: 500px) {
   .parrafoCont {
@@ -66,6 +68,9 @@ body {
 @media screen and (max-width: 477px) {
   .imageTech {
     max-width: 60px;
+  }
+  .tecnologias{
+    margin-top: 40px;
   }
 }
 /*-------------------------------Estilo imagen perfil---------------------------------*/
