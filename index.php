@@ -56,6 +56,7 @@
       <div class="presentacion">
         <div class="contImg">
           <img class="img" src="/imagenes/perfil3.png" alt="">
+          <img class="img2" src="/imagenes/perfil.jpg" alt="">
         </div>
         <div class="datosContacto">
           <a class="linkedin" href="http://www.linkedin.com/in/gustavo-sobarzo-novoa-28ab99107" target="_blank"><i

@@ -9,10 +9,10 @@ body {
 }
 .contenedor {
   margin-top: 30px;
-
   padding-bottom: 40px;
   background: url("/imagenes/banner.jpg");
-  background-repeat: round;
+
+  background-size: 100% 100%;
 }
 .contenedorGrid {
   display: grid;
@@ -75,8 +75,17 @@ body {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  transition: all 1s ease;
+  transform: perspective(600px);
+  transform-origin: 100% 50%;
+  transform-style: preserve-3d;
+} 
+.contImg:hover {
+  transform: perspective(600px) rotateY(-180deg) translateX(100%);
 }
-.img {
+.img,
+.img2 {
   max-width: 100%;
   height: auto;
   margin-left: auto;
@@ -85,21 +94,28 @@ body {
   background: #47a8b5;
   border: 6px solid #0c9aad;
 }
-
+.contImg .img1,
+.contImg .img2 {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.contImg .img2 {
+  transform: rotateY(-180deg);
+}
 /*-----------------------Estilos Datos contacto---------------------------*/
 .presentacion {
-    background-color: rgb(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    max-width: 200px;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 5px;
-    border-radius: 3px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  }
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  max-width: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
 .datosContacto {
   margin-top: 10px;
   text-align: left;
