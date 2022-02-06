@@ -19,12 +19,10 @@ body {
   grid-template-columns: 60% auto;
   gap: 10px;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (max-width: 500px) {
-  .contenedor {
-    max-width: 100%;
-  }
-}
+
 
 /*------------------------------------------------------------------------------------*/
 
@@ -72,14 +70,14 @@ body {
 }
 /*-------------------------------Estilo imagen perfil---------------------------------*/
 .contImg {
+  display: flex;
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   transition: all 1s ease;
   transform: perspective(600px);
   transform-origin: 100% 50%;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; 
 } 
 .contImg:hover {
   transform: perspective(600px) rotateY(-180deg) translateX(100%);
@@ -101,6 +99,7 @@ body {
 }
 .contImg .img2 {
   transform: rotateY(-180deg);
+  
 }
 /*-----------------------Estilos Datos contacto---------------------------*/
 .presentacion {
