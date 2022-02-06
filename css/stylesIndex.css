@@ -45,6 +45,9 @@ body {
   }
 }
 /*-------------------------------Estilo contenedor imagenes-----------------------------------------*/
+.tecnologias{
+  margin-top: 140px;
+}
 .contenedorImages {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -104,6 +107,7 @@ body {
   background-color: rgb(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   max-width: 200px;
+  max-height: 465px;
   display: grid;
   grid-template-columns: 1fr;
   margin-left: auto;
