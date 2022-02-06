@@ -72,7 +72,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  transition: all 1s ease;
+  transition: all 1s cubic-bezier(1, 0, 1, 1.49);
   transform: perspective(600px);
   transform-origin: 100% 50%;
   transform-style: preserve-3d; 
