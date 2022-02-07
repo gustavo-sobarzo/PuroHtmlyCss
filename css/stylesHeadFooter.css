@@ -3,14 +3,17 @@
 }
 .cabecero {
   width: 100%;
-  background-color: white;
+  background: url(/imagenes/banner2.jpg);
+  text-align: center;
+  background-size: cover;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
   border-radius: 1px;  
   display: grid;
 }
 .logo {
   border: none;
-  background: url('/imagenes/banner2.jpg');
+  background-color: rgb(16 0 255 / 10%);
+  backdrop-filter: blur(12px);
   text-align: center;
   background-size: cover;
   background-position: center;
