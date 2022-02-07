@@ -41,7 +41,7 @@ h1 {
 /*-----------------------------Estilos de Barra Navegacion-----------------------------*/
 ul {
   list-style-type: none;
-  background-color: #039;
+  background-color: #4d6791;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -60,12 +60,12 @@ li a {
   transition: all ease-in-out 450ms;
 }
 li a:hover {
-  background-color: #1d3557;
+  background-color: #34568B;
 }
 .hide {
   padding: 16px;
   font-size: 22px;
-  background: #112d4e;
+  background: #34568B;
   color: white;
   cursor: pointer;
   display: none;
