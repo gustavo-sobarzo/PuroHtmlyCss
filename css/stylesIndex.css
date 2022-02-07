@@ -81,7 +81,7 @@ body {
   margin-right: auto;
  
   transition: all 1s cubic-bezier(1, 0, 1, 1.49);
-  transform: perspective(600px);
+  transform: perspective(500px) scaleY(1);
   transform-origin: 100% 50%;
   transform-style: preserve-3d; 
 } 
@@ -218,7 +218,11 @@ body {
 .imagenCns {
   width: 100%;
 }
-
+/*Estilos contenedor descripciones*/
+.appPresupuesto{
+  background: #1b1b1b;
+  
+}
 /*Estilos footer*/
 #footer {
   margin-top: none;
