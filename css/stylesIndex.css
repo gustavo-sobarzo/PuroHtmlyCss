@@ -79,7 +79,7 @@ body {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+ 
   transition: all 1s cubic-bezier(1, 0, 1, 1.49);
   transform: perspective(600px);
   transform-origin: 100% 50%;
@@ -91,7 +91,7 @@ body {
 .img,
 .img2 {
   width: 100%;
-  height: 100%;
+  height: 80%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 170px;
@@ -109,10 +109,10 @@ body {
 }
 /*-----------------------Estilos Datos contacto---------------------------*/
 .presentacion {
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: rgb(16 0 255 / 10%);
   backdrop-filter: blur(12px);
   max-width: 200px;
-  max-height: 465px;
+  
   display: grid;
   grid-template-columns: 1fr;
   margin-left: auto;
@@ -156,6 +156,9 @@ body {
   border-bottom: 1px solid;
 }
 @media screen and (max-width: 500px) {
+  .presentacion{
+    max-height: 465px;
+  }
   #email {
     font-size: 7px;
   }
@@ -182,6 +185,9 @@ body {
   }
 }
 @media screen and (max-width: 780px) {
+  .presentacion{
+    max-height: 465px;
+  }
   #email {
     font-size: 8px;
     margin-left: 1px;
