@@ -8,14 +8,12 @@ body {
   margin: auto;
 }
 .contenedor { 
-  margin-top: 30px;
   padding-bottom: 40px;
   background: #fff;
 }
 .contenedorGrid {
   display: grid;
   grid-template-columns: 1fr;
-
   margin-left: auto;
   margin-right: auto;
   gap: 10px;
@@ -40,13 +38,15 @@ body {
   );
   color: #fff;
   border-radius: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .contEgreIngre {
   display: grid;
   justify-content: center;
   padding: 10px;
   gap: 15px;
-  text-align: center;
+  text-align: center; 
 }
 #porcentaje {
   font-size: smaller;
