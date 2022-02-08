@@ -1,20 +1,20 @@
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
 }
-nav{
-  border:none;
+nav {
+  border: none;
 }
 .cabecero {
   width: 100%;
-  background: url(/imagenes/banner2.jpg);
+  background: black;
   background-size: cover;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  border-radius: 1px;  
+  border-radius: 1px;
   display: grid;
 }
 .logo {
   border: none;
-  background-color: rgb(16 0 255 / 10%);
+  
   backdrop-filter: blur(12px);
   text-align: center;
   background-size: cover;
@@ -24,12 +24,12 @@ nav{
   position: sticky;
 }
 .logo h1 {
-  color: #FAFBFC;
+  color: #fafbfc;
   font-size: 30px;
   font-family: -webkit-pictograph;
 }
-.logoPhoto{
-  max-width: 100px; 
+.logoPhoto {
+  max-width: 100px;
 }
 .logo .iniciales-logo {
   padding: 5px;
@@ -38,7 +38,7 @@ nav{
   font-size: 16px;
   margin-bottom: 15px;
 }
-.elivi{
+.elivi {
   border: none;
 }
 /*-------------------------------------Estilo Titulo--------------------------------*/
@@ -53,7 +53,17 @@ h1 {
 /*-----------------------------Estilos de Barra Navegacion-----------------------------*/
 ul {
   list-style-type: none;
-  background-color: #4d6791;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    117deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(13, 24, 40, 1) 7%,
+    rgba(2, 127, 194, 1) 14%,
+    rgba(39, 68, 83, 1) 23%,
+    rgba(10, 150, 235, 1) 28%,
+    rgba(20, 135, 173, 1) 38%,
+    rgba(0, 0, 0, 1) 68%
+  );
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -72,12 +82,12 @@ li a {
   transition: all ease-in-out 450ms;
 }
 li a:hover {
-  background-color: #34568B;
+  background-color: #34568b;
 }
 .hide {
   padding: 16px;
   font-size: 22px;
-  background: #34568B;
+  background: black;
   color: white;
   cursor: pointer;
   display: none;
@@ -89,11 +99,10 @@ li a:hover {
     width: 100%;
     padding: 15px;
     justify-content: center;
-    
   }
-  .fac{
+  .fac {
     height: 40px;
-    
+
     padding: 2px;
     font-size: 15px;
   }
@@ -103,67 +112,64 @@ li a:hover {
   }
 
   nav ul {
-  display: none;
-
+    display: none;
   }
-  h1{
-      font-size: 18px;
-      
+  h1 {
+    font-size: 18px;
   }
 }
 
 /*----------------------------Estilos footer---------------------*/
-.foot{
-    width: 100%;
-    background-color: #000;
-  }
-  .contenedorFooter{
-    background-color: #000;
-    
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    width: 90%;
-    padding: 10px;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-  }
-  .contenedorFooter .titulo1Foot{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    padding-top:1px;
-    padding-bottom: 1px;
-    color: #fbfbfb;
-    text-align: center;
-    border: 1px dashed #f1faee;
-  }
-  .titulo1Foot{
-    background-color: #000;
-  }
-  .titulo1Foot .logoFoter{
-    border: 1px solid #f1faee;
-    padding: 7px;
-    display: inline-block;
-  }
-  .descripcionFoot{
-    background-color: #000;
-  }
-  .contenedorFooter h4{
-    color: #fbfbfb;
-  }
-  .contenedorFooter .descripcionFoot{
-    font-size: 9px;
-    justify-content: center;
-    text-align: justify;
-    color: #457b9d;
-  }
-  .contenedorFooter .end{
-    font-size: 10px;
-    color: #457b9d;
-    text-align: center;
-    background-color: #000;
-  }
-  
+.foot {
+  width: 100%;
+  background-color: #000;
+}
+.contenedorFooter {
+  background-color: #000;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.contenedorFooter .titulo1Foot {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: #fbfbfb;
+  text-align: center;
+  border: 1px dashed #f1faee;
+}
+.titulo1Foot {
+  background-color: #000;
+}
+.titulo1Foot .logoFoter {
+  border: 1px solid #f1faee;
+  padding: 7px;
+  display: inline-block;
+}
+.descripcionFoot {
+  background-color: #000;
+}
+.contenedorFooter h4 {
+  color: #fbfbfb;
+}
+.contenedorFooter .descripcionFoot {
+  font-size: 9px;
+  justify-content: center;
+  text-align: justify;
+  color: #457b9d;
+}
+.contenedorFooter .end {
+  font-size: 10px;
+  color: #457b9d;
+  text-align: center;
+  background-color: #000;
+}
