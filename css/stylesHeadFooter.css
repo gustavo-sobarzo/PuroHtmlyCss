@@ -19,9 +19,14 @@ nav{
   text-align: center;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  position: sticky;
 }
 .logo h1 {
+  color: #FAFBFC;
   font-size: 30px;
+  font-family: -webkit-pictograph;
 }
 .logoPhoto{
   max-width: 100px; 

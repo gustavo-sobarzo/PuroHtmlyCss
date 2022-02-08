@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesAcercade.css">
-    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
@@ -23,12 +22,12 @@
     </div>
     <div class="contenedorDos">
 
-        <h1 id="titulo_principal">Lenguajes de Programación</h1>
+        <h1 id="titulo_principal">Tarjetas</h1>
         <div class="contenedorGridCard">
             <div class="tarjeta" id="java" ">
                 <img src=" /imagenes/img1.jpg" alt="">
-                <h2>Java</h2>
-                <p>Creador: James Gosling</p>
+                <h2>JavaScript</h2>
+                <p>Creador: Brendan Eich</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo totam <a href="#" id="leerMas"
                         onclick="verMas('mas')">...
                         [leer más]</a></p>
@@ -139,7 +138,6 @@
             </div>
         </div>
 
-
         <div class="contenedor_ascensor">
             <a class="ascensor" href="#java">Ir java</a>
             <a class="ascensor" href="#lorem1">Ir Lorem 1</a>
@@ -151,34 +149,17 @@
         <div class="btn_contenedor">
             <a class="btn_volver" href="/index.php">volver</a>
         </div>
-
-
     </div>
+
     <footer id="footer">
-        </foot>
-        <script>
-            $(function () {
-                $("#footer").load("/headFooter/footer.html");
-            });
-        </script>
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="/app/js/animado.js"></script>
-        <script>
-            let verMas = (id) => {
-                if (id === 'mas') {
-                    document.getElementById('desplegar').style.display = 'block';
-                    document.getElementById('leerMas').style.display = 'none';
-                    document.getElementById('leerMenos').style.display = 'block';
-                }
-            }
-            let verMenos = (id) => {
-                if (id === 'menos') {
-                    document.getElementById('desplegar').style.display = 'none';
-                    document.getElementById('leerMenos').style.display = 'none';
-                    document.getElementById('leerMas').style.display = 'block';
-                }
-            }
-        </script>
+    </footer>
+
+    <script>
+        $(function () {
+            $("#footer").load("/headFooter/footer.html");
+        });
+    </script>
+    <script src="/app/js/animado.js"></script>
 </body>
 
 </html>

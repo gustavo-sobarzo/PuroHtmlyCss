@@ -11,3 +11,20 @@ function mostrarScroll(){
 }
 
 window.addEventListener('scroll', mostrarScroll);
+
+
+/*-------------------------animacion leer mas--------------------------------------------*/
+let verMas = (id) => {
+    if (id === 'mas') {
+        document.getElementById('desplegar').style.display = 'block';
+        document.getElementById('leerMas').style.display = 'none';
+        document.getElementById('leerMenos').style.display = 'block';
+    }
+}
+let verMenos = (id) => {
+    if (id === 'menos') {
+        document.getElementById('desplegar').style.display = 'none';
+        document.getElementById('leerMenos').style.display = 'none';
+        document.getElementById('leerMas').style.display = 'block';
+    }
+}

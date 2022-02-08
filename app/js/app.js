@@ -8,8 +8,8 @@ const cargarApp = () => {
 }
 
 let crearClienteHTML = (cliente) => {
-  let formatoClienteHtml = `<tr><td>${cliente.nombre}</td><td>${cliente.apellido}</td><td>${cliente.email}</td>
-  <td><button class="elemento_eliminar--btn" onclick="eliminarCliente(${cliente.idCliente})"><ion-icon name="close-circle-outline"></ion-icon></button></td></tr>`;
+  let formatoClienteHtml = `<tr><td data-label="Nombre">${cliente.nombre}</td><td data-label="Apellido">${cliente.apellido}</td><td data-label="Email">${cliente.email}</td>
+  <td data-label="Eliminar"><button class="elemento_eliminar--btn" onclick="eliminarCliente(${cliente.idCliente})"><ion-icon name="close-circle-outline"></ion-icon></button></td></tr>`;
   return formatoClienteHtml;
 }
 

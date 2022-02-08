@@ -2,12 +2,22 @@
 body {
   min-width: 330px;
   margin: auto;
+  background: rgb(2, 69, 172);
+  background: linear-gradient(
+    117deg,
+    rgba(2, 69, 172, 1) 0%,
+    rgba(2, 72, 172, 1) 7%,
+    rgba(2, 127, 194, 1) 14%,
+    rgba(2, 127, 194, 1) 23%,
+    rgba(10, 150, 235, 1) 28%,
+    rgba(54, 185, 228, 1) 38%,
+    rgba(221, 223, 247, 1) 68%
+  );
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 div {
-  background-color: #fcfcfc;
   text-align: center;
 }
 p {
@@ -24,7 +34,7 @@ p {
   display: grid;
   grid-template-columns: 0.5fr;
   gap: 20px;
-  background-color: #d6dbdf;
+
   justify-content: center;
 }
 .contenedorGrid {
@@ -32,43 +42,36 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background-color: #d6dbdf;
 }
 
 /*------------------------------------Estilo titulo Principal---------------------------- */
 #titulo_principal {
-  color: #2e4053;
+  color: #ececec;
   text-align: center;
-  font-family: "Trocchi", serif;
-  padding-top: 10px;
-  margin-top: 10px;
-}
-#titulo_principal:hover {
-  background-color: #aeb6bf;
-  margin-left: 24%;
-  margin-right: 24%;
-  border-radius: 4px;
+  padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 /* ---------------------------------------Estilos Elementos body -----------------------------------*/
 .contenedorDos {
   border: none;
-  background-color: #d6dbdf;
-  width: 90%;
+
   margin-left: auto;
   margin-right: auto;
 }
 
-/*-------------------------------Estilo tarjeta Java------------------------------*/
+/*-------------------------------Estilo tarjeta------------------------------*/
 .tarjeta {
   box-sizing: border-box;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
   border: none;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 0.25s;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
 }
 .tarjeta:hover {
   transform: translateY(-15px);
@@ -150,7 +153,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  
+
   border-radius: 3px;
 }
 .btn_contenedor:hover {
@@ -158,6 +161,9 @@ p {
 }
 
 /*-------------------------------------------Estilos Carrusel---------------------------------*/
+#resumen {
+  padding-top: 12px;
+}
 .carrusel,
 .slide,
 .slider,

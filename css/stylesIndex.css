@@ -41,6 +41,22 @@ body {
   line-height: 20px;
   margin-left: 6px;
 }
+.imgMobile{
+  max-width: 50%;
+  margin: auto;
+  border-radius: 60px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
+}
+.imgMobile:hover{
+  -webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(130deg);
+transform-style: preserve-3d;
+}
+.contResponsive{
+  text-align: center;
+}
 @media screen and (max-width: 500px) {
   .parrafoCont {
     font-size: 12px;
@@ -48,7 +64,7 @@ body {
 }
 /*-------------------------------Estilo contenedor imagenes-----------------------------------------*/
 .tecnologias{
-  margin-top: 140px;
+  margin-top: 50px;
 }
 .contenedorImages {
   display: grid;
