@@ -23,82 +23,61 @@ h2 {
   display: grid;
   border: none;
   border-radius: 4px;
-  background-color: #d6dbdf;
+  background-color: #ffffff;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   
 }
-.cabecero h1{
+.cabecero h1 {
   text-align: center;
 }
 /*-----------------------------------Media query para dispositivos mobiles-----------------------------*/
-@media screen and (max-width: 500px){
-  table{
+@media screen and (max-width: 500px) {
+  table {
     font-size: small;
     max-width: 400px;
   }
-  h1{
+  h1 {
     font-size: 18px;
   }
-  caption{
+  caption {
     font-size: 18px;
   }
-  contenedorPrincipal{
+  contenedorPrincipal {
     width: 100%;
   }
-  .contenedorFooter .descripcionFoot{
+  .contenedorFooter .descripcionFoot {
     font-size: 10px;
   }
 }
 
 /*---------------------------------------Estilo header o logo--------------------------------*/
-#header{
-  width:100%;
+#header {
+  width: 100%;
 }
 
-/*----------------------------Estilos Listas Ordenadas--------------------------*/
-ol {
-  list-style: none;
-  counter-reset: contador;
-}
-ol li {
-  float: none;
-  counter-increment: contador;
-}
-ol li::before {
-  content: "Curso " counter(contador) ") ";
-}
-ol li::after {
-  content: ".";
-}
-.listasOrdenadas {
-  border: none;
-  text-align: center;
-}
-@media screen and (max-width: 500px){
-  .listasOrdenadas{
-    font-size: 13px;
-  }
-}
-/*-----------------------------------Estilos Input----------------------------------*/
-.input{
+/*-----------------------------------Estilos Formulario----------------------------------*/
+
+.input {
   display: grid;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
   gap: 8px;
 }
-#nombre, #apellido, #email{
+#nombre,
+#apellido,
+#email {
   border-radius: 2px;
   padding: 7px;
   border: 1px solid rgb(153, 153, 153);
 }
-@media screen and (max-width: 500px){
-  label{
+@media screen and (max-width: 500px) {
+  label {
     font-size: 12px;
   }
 }
-#btnGuardar{
+#btnGuardar {
   width: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -110,7 +89,7 @@ ol li::after {
   background-color: #0479ff;
   cursor: pointer;
 }
-#btnGuardar:hover{
+#btnGuardar:hover {
   background-color: #0254b3;
 }
 .elemento_eliminar--btn {
@@ -120,15 +99,30 @@ ol li::after {
   border: none;
   cursor: pointer;
   line-height: 1;
-  
 }
-.elemento_eliminar--btn:active { transform: translateY(2px); }
+.elemento_eliminar--btn:active {
+  transform: translateY(2px);
+}
 
 /*----------------------------Estilos de Tabla--------------------------*/
-.contTabla {
+.contInpTabl{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
-  
+  gap: 20px;
+}
+
+@media screen and (max-width:600px){
+  .contInpTabl{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+table{
+  margin: auto;
 }
 table,
 th,
@@ -139,7 +133,7 @@ td {
 }
 caption {
   color: #000000;
-  
+
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -147,7 +141,7 @@ th {
   color: #f1faee;
   background-color: #547db8;
 }
-tr{
+tr {
   text-align: center;
 }
 tr:nth-child(even) {
@@ -156,37 +150,18 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #add8f5;
 }
- 
-@media only screen and (max-width: 800px) {
-	
-	#flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-	#flip-scroll * html .cf { zoom: 1; }
-	#flip-scroll *:first-child+html .cf { zoom: 1; }
-	
-	#flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
- 
-	#flip-scroll th,
-	#flip-scroll td { margin: 0; vertical-align: top; }
-	#flip-scroll th { text-align: left; }
-	
-	#flip-scroll table { display: block; position: relative; width: 100%; }
-	#flip-scroll thead { display: block; float: left; }
-	#flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
-	#flip-scroll thead tr { display: block; }
-	#flip-scroll th { display: block; text-align: right; }
-	#flip-scroll tbody tr { display: inline-block; vertical-align: top; }
-	#flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
- 
- 
-	/* sort out borders */
- 
-	#flip-scroll th { border-bottom: 0; border-left: 0; }
-	#flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
-	#flip-scroll tbody tr { border-left: 1px solid #babcbf; }
-	#flip-scroll th:last-child,
-	#flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }
+@media screen and (max-width: 500px) {
+  table,
+  th,
+  td {
+    border: 1px solid rgb(148, 142, 142);
+    border-collapse: collapse;
+    padding: auto;
+  }
+  th{
+    padding: auto;
+  }
 }
-		
 
 /*------------------------Listas de Descripcion----------------------*/
 .listaDescripcion {
@@ -194,7 +169,4 @@ tr:nth-child(odd) {
   border: none;
   text-align: center;
 }
-
-
-
 
