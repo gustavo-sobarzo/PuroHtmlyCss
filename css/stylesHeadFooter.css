@@ -14,7 +14,7 @@ nav {
 }
 .logo {
   border: none;
-  
+  padding: 40px;
   backdrop-filter: blur(12px);
   text-align: center;
   background-size: cover;
@@ -26,7 +26,7 @@ nav {
 .logo h1 {
   color: #fafbfc;
   font-size: 30px;
-  font-family: -webkit-pictograph;
+  font-family: revert;
 }
 .logoPhoto {
   max-width: 100px;
@@ -114,9 +114,7 @@ li a:hover {
   nav ul {
     display: none;
   }
-  h1 {
-    font-size: 18px;
-  }
+ 
 }
 
 /*----------------------------Estilos footer---------------------*/

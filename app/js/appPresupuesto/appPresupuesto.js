@@ -74,26 +74,28 @@ let crearEgresoHtml = (egreso) => {
 
 let listaEgreso = () => {
     let listaEgresos = '';
-    for (let egreso of egresos) {  
+    for (let egreso of egresos) {
         listaEgresos += crearEgresoHtml(egreso);
     }
     return document.getElementById('listaEgresos').innerHTML = listaEgresos;
 }
 
 let eliminarIngreso = (id) => {
-    let ingresoEliminar = ingresos.findIndex( ingreso => ingreso.idIngreso === id);
+    let ingresoEliminar = ingresos.findIndex(ingreso => ingreso.idIngreso === id);
     ingresos.splice(ingresoEliminar, 1);
     cargarCabecero();
     crearListaIngresos();
 }
 
 let eliminarEgreso = (id) => {
-    let egresoEliminar = egresos.findIndex( egreso => egreso.idEgreso === id);
+    let egresoEliminar = egresos.findIndex(egreso => egreso.idEgreso === id);
     egresos.splice(egresoEliminar, 1);
     cargarCabecero();
     listaEgreso();
 }
-
+/*-------------------Funcion que permite agregar un usuario a la tabla, se obtienen
+los valores almacenados en el formulario para crear el nuevo ingreso posterior a la 
+validacion de datos--------------------------*/
 const agregarDato = () => {
     let form = document.forms['form']
     let descripcion = form['descripcion'].value;
@@ -119,6 +121,7 @@ const agregarDato = () => {
 
 }
 
+/*----------------------validaciones----------------------------*/
 function validaVacio(valor) {
     valor = valor.replace("&nbsp;", "");
     valor = valor == undefined ? "" : valor;
@@ -130,8 +133,20 @@ function validaVacio(valor) {
     }
 }
 
+
 function limpiar() {
     document.getElementById("descripcion").value = "";
     document.getElementById("valor").value = "";
 }
 
+function validarEntrada() {
+    var inputbox = document.getElementById("valor");
+
+    if (isNaN(parseFloat(inputbox.value))) {
+        inputbox.className = "red";
+        
+    }
+    else {
+        inputbox.className = "green";
+    }
+}

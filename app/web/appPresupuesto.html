@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesHeadFooter.css">
+    <link rel="icon" href="/imagenes/raomanLogo.png">
     <link rel="stylesheet" href="/css/appPresupuesto.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -58,7 +59,8 @@
                         class="inputs" 
                         placeholder="valor" 
                         type="number" 
-                        autocomplete="off" 
+                        autocomplete="off"
+                        onkeyup="validarEntrada()" 
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                         maxlength="8">
                     <button class="btnAddDato" onclick="agregarDato()"><i
