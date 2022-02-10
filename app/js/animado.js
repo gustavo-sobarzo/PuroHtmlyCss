@@ -38,3 +38,15 @@ $(document).ready(function () {
         $("#java").removeClass("aumentarWidth");
     });
 });
+
+/*-----Formulario contacto Index-----------------------------*/
+$(document).ready(function(){
+    $("#email").click(function(a){
+	    $(".contFormContact").css("display", "block");
+        a.preventDefault();
+    });
+    $("#cancel").click(function(a){
+        $(".contFormContact").css("display", "none");
+        a.preventDefault();
+    });
+});
