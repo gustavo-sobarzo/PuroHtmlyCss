@@ -1,7 +1,6 @@
-const clientes = [new Cliente('Juan', 'Segura', 'juan@gmail.com'),
+const clientes = [new Cliente('Juan', 'Segovia', 'juan@gmail.com'),
 new Cliente('Gustavo', 'Sobarzo', 'gustavo@gmail.com'),
-new Cliente('Maria', 'Lara', 'maria@gmail.com'),
-new Cliente('dasd', 'daasda', 'sdads@gmail.com')];
+new Cliente('Maria', 'Castro', 'maria@gmail.com')];
 
 const cargarApp = () => {
   crearListaCliente();
