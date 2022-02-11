@@ -42,8 +42,11 @@ $(document).ready(function () {
 /*-----Formulario contacto Index-----------------------------*/
 $(document).ready(function(){
     $("#email").click(function(a){
-	    $(".contFormContact").css("display", "block");
+	    $(".contFormContact").css("display", "block"); 
         a.preventDefault();
+    });
+    $("#contactMeNow").click(function(){
+        $(".contFormContact").css("display", "block")
     });
     $("#cancel").click(function(a){
         $(".contFormContact").css("display", "none");
