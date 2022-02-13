@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="contenedorInput"> 
+            <div class="contenedorInput">
                 <form class="formulario" action="" id="form" onsubmit="return false">
                     <select class="select" name="" id="select">
                         <option class="optionA" value="ingreso">+</option>
@@ -54,13 +54,8 @@
                     </select>
                     <input id="descripcion" class="inputs" placeholder="descripción" type="text" autocomplete="off"
                         maxlength="15">
-                    <input 
-                        id="valor" 
-                        class="inputs" 
-                        placeholder="valor" 
-                        type="number" 
-                        autocomplete="off"
-                        onkeyup="validarEntrada()" 
+                    <input id="valor" class="inputs" placeholder="valor" type="number" autocomplete="off"
+                        onkeyup="validarEntrada()"
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                         maxlength="8">
                     <button class="btnAddDato" onclick="agregarDato()"><i
@@ -69,18 +64,25 @@
             </div>
 
             <div class="contListasIngreEgre">
-                <div class="ingresos">
-                    <h2 class="tituloIngre">Ingresos</h2>
-                    <div id="listaIngresos">
-
+                <fieldset>
+                    <legend>
+                        <h2 class="tituloIngre">Ingresos</h2>
+                    </legend>
+                    <div class="ingresos">
+                        <div id="listaIngresos">
+                        </div>
                     </div>
-                </div>
-                <div class="egresos">
-                    <h2 class="tituloEgreso">Egreso</h2>
-                    <div id="listaEgresos">
-
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h2 class="tituloEgreso">Egresos</h2>
+                    </legend>
+                    <div class="egresos">
+                        <div id="listaEgresos">
+                        </div>
                     </div>
-                </div>
+                </fieldset>
+
             </div>
 
         </div>

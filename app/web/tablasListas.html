@@ -24,9 +24,9 @@
   <div class="contenedorPrincipal">
 
     <div class="contInpTabl">
-
-      <form id="form" onsubmit="return false" class="input" method="post">
-        <h1>Formulario Personas</h1>
+<fieldset class="contForm">
+  <legend><h1>Formulario Personas</h1></legend>
+  <form id="form" onsubmit="return false" class="input" method="post">
         <label for="">Nombre:</label>
         <input id="nombre" type="text" autocomplete="off">
         <label for="">Apellido:</label>
@@ -35,6 +35,8 @@
         <input id="email" type="email" placeholder="example@email.com" autocomplete="off">
         <button id="btnGuardar" onclick="agregarCliente()">Guardar</button>
       </form>
+</fieldset>
+      
       <div class="contTabla">
         <table class="tabla">
           <thead>
