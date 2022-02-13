@@ -74,9 +74,13 @@ form{
   padding: 7px;
   border: 1px solid rgb(153, 153, 153);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   label {
     font-size: 12px;
+  }
+  .contForm{
+    max-width: 330px;
+    margin: auto;
   }
 }
 #btnGuardar {
