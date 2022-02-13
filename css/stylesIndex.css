@@ -77,9 +77,8 @@ body {
   border: 1px solid rgb(194, 187, 187);
   margin-left: auto;
   margin-right: auto;
-  max-width: 350px;
+  max-width: 280px;
   border-radius: 4px;
-  
   color: #59535c;
   grid-column-start: 1;
   grid-column-end: -1;

@@ -1,19 +1,6 @@
 
 /*-------------------------animacion leer mas--------------------------------------------*/
-// let verMas = (id) => {
-//     if (id === 'mas') {
-//         document.getElementById('desplegar').style.display = 'block';
-//         document.getElementById('leerMas').style.display = 'none';
-//         document.getElementById('leerMenos').style.display = 'block';
-//     }
-// }
-// let verMenos = (id) => {
-//     if (id === 'menos') {
-//         document.getElementById('desplegar').style.display = 'none';
-//         document.getElementById('leerMenos').style.display = 'none';
-//         document.getElementById('leerMas').style.display = 'block';
-//     }
-// }
+
 $(document).ready(function(){
     $("#leerMas").click(function(a){
         $("#desplegar").css("display", "block");
