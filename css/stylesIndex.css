@@ -68,8 +68,15 @@ body {
   color: #59535c;
   grid-column-start: 1;
   grid-column-end: -1;
+  transform-style: preserve-3d;
 }
-.contRepo{
+
+
+@keyframes animacion {
+  0%{ background: rgba(76, 0, 130, 0) ;}
+  100%{ background: rgb(76, 0, 130) ;}
+}
+.contRepo {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -84,8 +91,7 @@ body {
   grid-column-end: -1;
   padding: 6px;
 }
-.tituRepo{
-  
+.tituRepo {
   font-size: 12px;
 }
 @media screen and (max-width: 500px) {
@@ -272,19 +278,19 @@ body {
   background: #1b1b1b;
 }
 /*------------------------------estilos contactame----------------------------------------*/
-.contactMe{
+.contactMe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 150px;
   font-size: 8px;
 }
-.tituloContact{
+.tituloContact {
   display: flex;
   margin-left: auto;
   margin-right: 4px;
   vertical-align: middle;
 }
-.imgContact{
+.imgContact {
   vertical-align: middle;
   cursor: pointer;
 }
@@ -337,6 +343,37 @@ body {
   }
   .formContact {
     max-width: 290px;
+  }
+}
+/*--------------------Estilos Hover de carga---------------------------*/
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: 1s all;
+  opacity: 0;
+}
+.loading.show {
+  opacity: 1;
+}
+.loading .spin {
+  border: 3px solid hsla(185, 100%, 62%, 0.2);
+  border-top-color: #3cefff;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 /*Estilos footer*/

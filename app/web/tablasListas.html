@@ -19,24 +19,31 @@
 </head>
 
 <body onload="cargarApp()">
+
+  <div class="loading show">
+    <div class="spin"></div>
+  </div>
+
   <div id="header">
   </div>
   <div class="contenedorPrincipal">
 
     <div class="contInpTabl">
-<fieldset class="contForm">
-  <legend><h1>Formulario Personas</h1></legend>
-  <form id="form" onsubmit="return false" class="input" method="post">
-        <label for="">Nombre:</label>
-        <input id="nombre" type="text" autocomplete="off">
-        <label for="">Apellido:</label>
-        <input id="apellido" type="text" autocomplete="off">
-        <label for="">Email:</label>
-        <input id="email" type="email" placeholder="example@email.com" autocomplete="off">
-        <button id="btnGuardar" onclick="agregarCliente()">Guardar</button>
-      </form>
-</fieldset>
-      
+      <fieldset class="contForm">
+        <legend>
+          <h1>Formulario Personas</h1>
+        </legend>
+        <form id="form" onsubmit="return false" class="input" method="post">
+          <label for="">Nombre:</label>
+          <input id="nombre" type="text" autocomplete="off">
+          <label for="">Apellido:</label>
+          <input id="apellido" type="text" autocomplete="off">
+          <label for="">Email:</label>
+          <input id="email" type="email" placeholder="example@email.com" autocomplete="off">
+          <button id="btnGuardar" onclick="agregarCliente()">Guardar</button>
+        </form>
+      </fieldset>
+
       <div class="contTabla">
         <table class="tabla">
           <thead>
@@ -75,7 +82,7 @@
       $("#footer").load("/headFooter/footer.html");
     });
   </script>
-
+  <script src="/app/js/animado.js"></script>
   <script src="/app/js/Cliente.js"></script>
   <script src="/app/js/app.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
