@@ -119,7 +119,7 @@ var Loading = (loadingDelayHidden = 0) => {
 }
 
 // Para usarlo se declara e inicia. El número es el tiempo transcurrido para borra el HTML una vez cargado todos los elementos, en este caso 1 segundo: 1000 milisegundos,
-Loading(1000).init();
+Loading(500).init();
 
 //animaciones para diseño responsive card
 
