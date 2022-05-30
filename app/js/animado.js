@@ -98,7 +98,7 @@ var Loading = (loadingDelayHidden = 0) => {
             loading = document.querySelector('.loading');
             imgs = Array.from(document.images);
             lenImgs = imgs.length;
-
+            console.log(lenImgs);
             /* Comprobar que todas las imágenes estén cargadas */
             if(imgs.length === 0) {
                 // No hay ninguna
