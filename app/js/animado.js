@@ -45,6 +45,11 @@ $(document).ready(function(){
 //======================================================================
 // LOADING
 //======================================================================
+$(window).load(function () {
+        
+    $("#agregarShow").addClass("show");
+
+});
 var Loading = (loadingDelayHidden = 0) => {
 
     //-----------------------------------------------------
@@ -66,6 +71,8 @@ var Loading = (loadingDelayHidden = 0) => {
     /**
      * Método que aumenta el contador de las imágenes cargadas
      */
+    
+    
     function incrementCounterImgs() {
         counterImgsLoading += 1;
         // Comprueba si todas las imágenes están cargadas
