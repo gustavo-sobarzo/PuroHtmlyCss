@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
+        <script src="/app/js/animado.js"></script>
     <script>
         $(function () {
             $("#header").load("/headFooter/head.html");
@@ -18,7 +19,7 @@
     <title>Tarjetas</title>
 </head>
 
-<body>
+<body onload="loadSpin()">
     <div id="contenedor_carga">
         <div id="carga"></div>
     </div>
@@ -42,71 +43,57 @@
             </div>
         </div>
 
-        
+
         <div class="carrusel">
             <h2 id="resumen">Carrusel</h2>
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide">
-                        <img src="/imagenes/1.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/1.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/2.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/2.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/3.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/3.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/4.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/4.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/5.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/5.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/6.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/6.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/7.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/7.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/1.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/1.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/2.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/2.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/3.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/3.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/4.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/4.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/5.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/5.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/6.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/6.png" height="100" width="250" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="/imagenes/7.png" height="100" width="250"
-                            alt="" />
+                        <img src="/imagenes/7.png" height="100" width="250" alt="" />
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="contenedorGrid" style="border: none;">
             <div class="tarjeta" id="lorem1">
                 <img src="/imagenes/img2.jpg" alt="">
@@ -149,7 +136,7 @@
             <a class="ascensor" href="#lorem3">Ir Lorem 3</a>
             <a class="ascensor" href="#lorem4">Ir Lorem 4</a>
         </div>
-       
+
     </div>
 
     <footer id="footer">
@@ -160,7 +147,7 @@
             $("#footer").load("/headFooter/footer.html");
         });
     </script>
-    <script src="/app/js/animado.js"></script>
+    
 </body>
 
 </html>

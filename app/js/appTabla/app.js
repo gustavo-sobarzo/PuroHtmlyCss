@@ -1,13 +1,29 @@
 
+
 //Creo el objeto clientes y luego inserto cliente usando la clase Cliente
 const clientes = [new Cliente('Juan', 'Segovia', 'juan@gmail.com'),
 new Cliente('Gustavo', 'Sobarzo', 'gustavo@gmail.com'),
 new Cliente('Maria', 'Castro', 'maria@gmail.com')];
 //Funcion que se ejecuta al cargar el cuerpo del HTML a su vez este crea la lista de clientes
 //con la funcion crearListaCliente
+
+function lanzador1(){
+ var contenedor = document.getElementById('contenedor_carga');
+ contenedor.style.visibility = 'hidden';
+ contenedor.style.opacity = '0';
+}
+
 const cargarApp = () => {
   crearListaCliente();
 }
+
+function lanzador(){
+  lanzador1();
+  cargarApp();
+}
+
+
+
 //Recibe un cliente obtenido de clientes y crea la plantilla html con los atributos
 //de nombre apellido y idCliente retorna todo en formatoClienteHtml
 let crearClienteHTML = (cliente) => {

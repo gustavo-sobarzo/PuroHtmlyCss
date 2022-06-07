@@ -3,11 +3,26 @@ new Ingreso('cobro 3', 20000)];
 
 let egresos = [new Egreso('Pago 1', 20000), new Egreso('Pago 2', 10000)];
 
+
+
+function lanzadera1(){
+    var contenedor = document.getElementById('contenedor_carga');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+}
+
 const cargarApp = () => {
     cargarCabecero();
     listaEgreso();
     crearListaIngresos();
 }
+
+function lanzadera(){
+    lanzadera1();
+    cargarApp();
+}
+
+
 
 const cargarCabecero = () => {
     document.getElementById('totIngresos').innerHTML = formatoMoneda(sumaIngresos());
